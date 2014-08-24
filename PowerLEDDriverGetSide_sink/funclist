@@ -1,0 +1,17 @@
+_putch: CODE, 745 0 7
+_countup: CODE, 586 0 46
+_main: CODE, 51 0 273
+_waitstart: CODE, 632 0 25
+_setdata: CODE, 324 0 58
+__initialization: CODE, 31 0 16
+_InterTimer: CODE, 4 0 25
+_noxinit: CODE, 730 0 8
+_no0: CODE, 535 0 51
+_getch: CODE, 738 0 7
+_no1: CODE, 484 0 51
+_changeLED: CODE, 714 0 16
+_no2: CODE, 433 0 51
+_no3: CODE, 382 0 51
+___bmul: CODE, 680 0 18
+_setpin: CODE, 657 0 23
+Total: 726
