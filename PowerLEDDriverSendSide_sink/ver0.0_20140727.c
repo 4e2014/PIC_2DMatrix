@@ -112,8 +112,8 @@ void main()
             case 11:RB2=1; break;
             case 13:RB1=1; break;
             case 15:RB0=1; break;
-            case 16:i=0;PORTB=0x00;PORTD=0xFF;break;
-             default:PORTB=0x00;PORTD=0xFF;break;
+            case 16:i=0;PORTB=0x00;PORTD=0b00111111;break;
+             default:PORTB=0x00;PORTD=0x0b00011111;break;
          }
          waitdelay();
          PORTD=0b00001111;

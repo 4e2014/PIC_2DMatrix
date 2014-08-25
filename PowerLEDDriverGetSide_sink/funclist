@@ -1,17 +1,17 @@
-_putch: CODE, 743 0 7
-_countup: CODE, 583 0 46
-_main: CODE, 51 0 270
-_waitstart: CODE, 629 0 25
-_setdata: CODE, 321 0 58
+_putch: CODE, 749 0 7
+_countup: CODE, 589 0 46
+_main: CODE, 51 0 276
+_waitstart: CODE, 635 0 25
+_setdata: CODE, 327 0 58
 __initialization: CODE, 31 0 16
 _InterTimer: CODE, 4 0 25
-_noxinit: CODE, 728 0 8
-_no0: CODE, 532 0 51
-_getch: CODE, 736 0 7
-_no1: CODE, 481 0 51
-_changeLED: CODE, 712 0 16
-_no2: CODE, 430 0 51
-_no3: CODE, 379 0 51
-___bmul: CODE, 678 0 18
-_setpin: CODE, 654 0 24
-Total: 724
+_noxinit: CODE, 734 0 8
+_no0: CODE, 538 0 51
+_getch: CODE, 742 0 7
+_no1: CODE, 487 0 51
+_changeLED: CODE, 718 0 16
+_no2: CODE, 436 0 51
+_no3: CODE, 385 0 51
+___bmul: CODE, 684 0 18
+_setpin: CODE, 660 0 24
+Total: 730

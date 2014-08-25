@@ -3707,18 +3707,18 @@ Version 3.2 HI-TECH Software Intermediate Code
 [e :U 399 ]
 [e = _RB0 -> -> 1 `i `b ]
 [e $U 390  ]
-[; ;ver0.0_20140727.c: 115: case 16:i=0;PORTB=0x00;PORTD=0xFF;break;
+[; ;ver0.0_20140727.c: 115: case 16:i=0;PORTB=0x00;PORTD=0b00111111;break;
 "115
 [e :U 400 ]
 [e = _i -> -> 0 `i `uc ]
 [e = _PORTB -> -> 0 `i `uc ]
-[e = _PORTD -> -> 255 `i `uc ]
+[e = _PORTD -> -> 63 `i `uc ]
 [e $U 390  ]
-[; ;ver0.0_20140727.c: 116: default:PORTB=0x00;PORTD=0xFF;break;
+[; ;ver0.0_20140727.c: 116: default:PORTB=0x00;PORTD=0x0b00011111;break;
 "116
 [e :U 401 ]
 [e = _PORTB -> -> 0 `i `uc ]
-[e = _PORTD -> -> 255 `i `uc ]
+[e = _PORTD -> -> 69905 `l `uc ]
 [e $U 390  ]
 "117
 }

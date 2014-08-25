@@ -97,7 +97,9 @@ void main()
         i=1;0;
         RD6=1;
      while(1){
-         while(RC4==0);
+         while(RD4==0);
+         if(RD5==1)
+             i=8;
          //__delay_ms(500);
          switch(i){
             case 1:RA7=1;break;
@@ -110,7 +112,7 @@ void main()
             case 8:RD1=1;i=0;break;
          }
          //__delay_ms(500);
-         while(RC4==1);
+         while(RD4==1);
 
         RA7=0;
         RA6=0;

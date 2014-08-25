@@ -125,11 +125,11 @@
 [v _InterTimer InterTimer `II(v  1 e 0 0 ]
 "52
 [v _main main `(v  1 e 0 0 ]
-"174
+"176
 [v _countup countup `(i  1 e 2 0 ]
-"189
+"191
 [v _setdata setdata `(v  1 e 0 0 ]
-"196
+"198
 [v _waitstart waitstart `(v  1 e 0 0 ]
 "412 /Applications/microchip/xc8/v1.32/include/pic16f1939.h
 [v _PORTA PORTA `VEuc  1 e 1 @12 ]
@@ -231,8 +231,6 @@
 [v _RC2 RC2 `VEb  1 e 0 @114 ]
 "8382
 [v _RC3 RC3 `VEb  1 e 0 @115 ]
-"8384
-[v _RC4 RC4 `VEb  1 e 0 @116 ]
 "8398
 [v _RCIF RCIF `VEb  1 e 0 @141 ]
 "8400
@@ -241,6 +239,10 @@
 [v _RD0 RD0 `VEb  1 e 0 @120 ]
 "8404
 [v _RD1 RD1 `VEb  1 e 0 @121 ]
+"8410
+[v _RD4 RD4 `VEb  1 e 0 @124 ]
+"8412
+[v _RD5 RD5 `VEb  1 e 0 @125 ]
 "8414
 [v _RD6 RD6 `VEb  1 e 0 @126 ]
 "8418
@@ -279,14 +281,14 @@
 [v main@j j `uc  1 a 1 14 ]
 "55
 [v main@stoclocal stoclocal `uc  1 a 1 13 ]
-"173
+"175
 } 0
-"196
+"198
 [v _waitstart waitstart `(v  1 e 0 0 ]
 {
-"197
+"199
 [v waitstart@ch ch `uc  1 a 1 6 ]
-"205
+"207
 } 0
 "9 /Users/akihiro/GitHub/PIC_2DMatrix/PowerLEDDriverGetSide_sink/uart.c
 [v _getch getch `(uc  1 e 1 0 ]
@@ -298,13 +300,13 @@
 {
 "79
 } 0
-"189 /Users/akihiro/GitHub/PIC_2DMatrix/PowerLEDDriverGetSide_sink/ver0.0_20140727.c
+"191 /Users/akihiro/GitHub/PIC_2DMatrix/PowerLEDDriverGetSide_sink/ver0.0_20140727.c
 [v _setdata setdata `(v  1 e 0 0 ]
 {
-"190
+"192
 [v setdata@j j `uc  1 a 1 9 ]
 [v setdata@i i `uc  1 a 1 8 ]
-"195
+"197
 } 0
 "4 /Applications/microchip/xc8/v1.32/sources/common/Umul8.c
 [v ___bmul __bmul `(uc  1 e 1 0 ]
@@ -319,14 +321,14 @@
 [v ___bmul@multiplier multiplier `uc  1 a 1 2 ]
 "51
 } 0
-"174 /Users/akihiro/GitHub/PIC_2DMatrix/PowerLEDDriverGetSide_sink/ver0.0_20140727.c
+"176 /Users/akihiro/GitHub/PIC_2DMatrix/PowerLEDDriverGetSide_sink/ver0.0_20140727.c
 [v _countup countup `(i  1 e 2 0 ]
 {
 [v countup@i i `*.4uc  1 a 1 wreg ]
 [v countup@i i `*.4uc  1 a 1 wreg ]
 [v countup@j j `*.4uc  1 p 1 0 ]
 [v countup@i i `*.4uc  1 a 1 2 ]
-"188
+"190
 } 0
 "39
 [v _InterTimer InterTimer `II(v  1 e 0 0 ]

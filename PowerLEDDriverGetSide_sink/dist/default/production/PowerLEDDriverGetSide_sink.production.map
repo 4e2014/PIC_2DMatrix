@@ -5,7 +5,7 @@ Linker command line:
 --edf=/Applications/microchip/xc8/v1.32/dat/en_msgs.txt -cs \
   -h+dist/default/production/PowerLEDDriverGetSide_sink.production.sym \
   --cmf=dist/default/production/PowerLEDDriverGetSide_sink.production.cmf \
-  -z -Q16F1939 -o/tmp/cgtcwYvjh \
+  -z -Q16F1939 -o/tmp/cgteF933L \
   -Mdist/default/production/PowerLEDDriverGetSide_sink.production.map -E1 \
   -ver=XC8 -ASTACK=02080h-0231fh -pstack=STACK -ACONST=00h-0FFhx64 \
   -ACODE=00h-07FFhx8 -ASTRCODE=00h-03FFFh -AENTRY=00h-0FFhx64 \
@@ -31,7 +31,7 @@ Linker command line:
   -ppowerup=CODE -pcinit=CODE -pfunctab=CODE -ACONFIG=08007h-08008h \
   -pconfig=CONFIG -DCONFIG=2 -AIDLOC=08000h-08003h -pidloc=IDLOC -DIDLOC=2 \
   -AEEDATA=00h-0FFh/0F000h -peeprom_data=EEDATA -DEEDATA=2 -DCODE=2 \
-  -DSTRCODE=2 -DSTRING=2 -DCONST=2 -DENTRY=2 -k /tmp/cgtNBW5Yv.obj \
+  -DSTRCODE=2 -DSTRING=2 -DCONST=2 -DENTRY=2 -k /tmp/cgtu0540Y.obj \
   dist/default/production/PowerLEDDriverGetSide_sink.production.obj 
 
 Object code version is 3.11
@@ -41,31 +41,31 @@ Machine type is 16F1939
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-/tmp/cgtNBW5Yv.obj
+/tmp/cgtu0540Y.obj
                 end_init                             1D       1D        2        8       0
                 reset_vec                             0        0        2        0       0
                 config                             8007     8007        2    1000E       0
 dist/default/production/PowerLEDDriverGetSide_sink.production.obj
                 cinit                                1F       1F       14        8       0
                 intentry                              4        4       19        8       0
-                text14                              214      214       33        8       0
-                text13                              1E1      1E1       33        8       0
-                text12                              1AE      1AE       33        8       0
-                text11                              17B      17B       33        8       0
-                text10                              2D8      2D8        8      590       0
-                text9                               2C8      2C8       10      590       0
-                text8                               2E7      2E7        7      590       0
-                text6                               247      247       2E        8       0
-                text5                               2A6      2A6       12        8       0
-                text4                               141      141       3A        8       0
-                text3                               28E      28E       18        8       0
-                text2                               2E0      2E0        7      590       0
-                text1                               275      275       19        8       0
-                swtext1                             2B8      2B8       10      570       0
-                maintext                             33       33      10E        8       0
+                text14                              21A      21A       33        8       0
+                text13                              1E7      1E7       33        8       0
+                text12                              1B4      1B4       33        8       0
+                text11                              181      181       33        8       0
+                text10                              2DE      2DE        8      59C       0
+                text9                               2CE      2CE       10      59C       0
+                text8                               2ED      2ED        7      59C       0
+                text6                               24D      24D       2E        8       0
+                text5                               2AC      2AC       12        8       0
+                text4                               147      147       3A        8       0
+                text3                               294      294       18        8       0
+                text2                               2E6      2E6        7      59C       0
+                text1                               27B      27B       19        8       0
+                swtext1                             2BE      2BE       10      57C       0
+                maintext                             33       33      114        8       0
                 cstackBANK0                          50       50       10       20       1
                 cstackCOMMON                         70       70        7       70       1
-                clrtext                             2EE      2EE        6      590       0
+                clrtext                             2F4      2F4        6      59C       0
                 bssBANK1                             A0       A0       30       A0       1
                 bssBANK0                             20       20       30       20       1
                 bssCOMMON                            77       77        1       70       1
@@ -74,28 +74,28 @@ TOTAL           Name                               Link     Load   Length     Sp
         CLASS   STACK          
 
         CLASS   CONST          
-                swtext1                             2B8      2B8       10         0
+                swtext1                             2BE      2BE       10         0
 
         CLASS   CODE           
                 end_init                             1D       1D        2         0
                 cinit                                1F       1F       14         0
                 intentry                              4        4       19         0
                 reset_vec                             0        0        2         0
-                text14                              214      214       33         0
-                text13                              1E1      1E1       33         0
-                text12                              1AE      1AE       33         0
-                text11                              17B      17B       33         0
-                text10                              2D8      2D8        8         0
-                text9                               2C8      2C8       10         0
-                text8                               2E7      2E7        7         0
-                text6                               247      247       2E         0
-                text5                               2A6      2A6       12         0
-                text4                               141      141       3A         0
-                text3                               28E      28E       18         0
-                text2                               2E0      2E0        7         0
-                text1                               275      275       19         0
-                maintext                             33       33      10E         0
-                clrtext                             2EE      2EE        6         0
+                text14                              21A      21A       33         0
+                text13                              1E7      1E7       33         0
+                text12                              1B4      1B4       33         0
+                text11                              181      181       33         0
+                text10                              2DE      2DE        8         0
+                text9                               2CE      2CE       10         0
+                text8                               2ED      2ED        7         0
+                text6                               24D      24D       2E         0
+                text5                               2AC      2AC       12         0
+                text4                               147      147       3A         0
+                text3                               294      294       18         0
+                text2                               2E6      2E6        7         0
+                text1                               27B      27B       19         0
+                maintext                             33       33      114         0
+                clrtext                             2F4      2F4        6         0
 
         CLASS   STRCODE        
 
@@ -257,12 +257,12 @@ TOTAL           Name                               Link     Load   Length     Sp
 SEGMENTS        Name                           Load    Length   Top    Selector   Space  Class     Delta
 
                 reset_vec                      000000  000002  000002         0       0  CODE        2
-                intentry                       000004  0002B4  0002B8         8       0  CODE        2
+                intentry                       000004  0002BA  0002BE         8       0  CODE        2
                 bssBANK0                       000020  000040  000060        20       1  BANK0       1
                 cstackCOMMON                   000070  000008  000078        70       1  COMMON      1
                 bssBANK1                       0000A0  000030  0000D0        A0       1  BANK1       1
-                swtext1                        0002B8  000010  0002C8       570       0  CONST       2
-                text9                          0002C8  00002C  0002F4       590       0  CODE        2
+                swtext1                        0002BE  000010  0002CE       57C       0  CONST       2
+                text9                          0002CE  00002C  0002FA       59C       0  CODE        2
                 config                         008007  000002  008009     1000E       0  CONFIG      2
 
 
@@ -284,13 +284,13 @@ UNUSED ADDRESS RANGES
         BANK9            004A0-004EF              50           1
         BIGRAM           02000-023EF             3F0           1
         CODE             00002-00003               2           2
-                         002F4-03FFF             800
+                         002FA-03FFF             800
         COMMON           00078-0007D               6           1
         CONST            00002-00003               2           2
-                         002F4-03FFF             100
+                         002FA-03FFF             100
         EEDATA           0F000-0F0FF             100           2
         ENTRY            00002-00003               2           2
-                         002F4-03FFF             100
+                         002FA-03FFF             100
         IDLOC            08000-08003               4           2
         RAM              00060-0006F              10           1
                          000D0-000EF              20
@@ -339,9 +339,9 @@ UNUSED ADDRESS RANGES
         SFR9             00480-0049F              20           1
         STACK            02080-0231F             2A0           1
         STRCODE          00002-00003               2           2
-                         002F4-03FFF            3D0C
+                         002FA-03FFF            3D06
         STRING           00002-00003               2           2
-                         002F4-03FFF             100
+                         002FA-03FFF             100
 
                                   Symbol Table
 
@@ -384,12 +384,13 @@ _RC0                     (abs)        00070
 _RC1                     (abs)        00071
 _RC2                     (abs)        00072
 _RC3                     (abs)        00073
-_RC4                     (abs)        00074
 _RCIF                    (abs)        0008D
 _RCREG                   (abs)        00199
 _RCSTA                   (abs)        0019D
 _RD0                     (abs)        00078
 _RD1                     (abs)        00079
+_RD4                     (abs)        0007C
+_RD5                     (abs)        0007D
 _RD6                     (abs)        0007E
 _RE0                     (abs)        00080
 _RE1                     (abs)        00081
@@ -615,7 +616,7 @@ __S0                     (abs)        08009
 __S1                     (abs)        000D0
 __S2                     (abs)        00000
 __S3                     (abs)        00000
-___bmul                  text5        002A6
+___bmul                  text5        002AC
 ___bmul@multiplicand     cstackCOMMON 00076
 ___bmul@multiplier       cstackBANK0  00052
 ___bmul@product          cstackBANK0  00051
@@ -623,21 +624,21 @@ ___int_sp                stack        00000
 ___latbits               (abs)        00003
 ___sp                    stack        00000
 __end_of_InterTimer      intentry     0001D
-__end_of___bmul          text5        002B8
+__end_of___bmul          text5        002BE
 __end_of__initialization cinit        0002F
-__end_of_changeLED       text9        002D8
-__end_of_countup         text6        00275
-__end_of_getch           text2        002E7
-__end_of_main            maintext     00141
-__end_of_no0             text14       00247
-__end_of_no1             text13       00214
-__end_of_no2             text12       001E1
-__end_of_no3             text11       001AE
-__end_of_noxinit         text10       002E0
-__end_of_putch           text8        002EE
-__end_of_setdata         text4        0017B
-__end_of_setpin          text3        002A6
-__end_of_waitstart       text1        0028E
+__end_of_changeLED       text9        002DE
+__end_of_countup         text6        0027B
+__end_of_getch           text2        002ED
+__end_of_main            maintext     00147
+__end_of_no0             text14       0024D
+__end_of_no1             text13       0021A
+__end_of_no2             text12       001E7
+__end_of_no3             text11       001B4
+__end_of_noxinit         text10       002E6
+__end_of_putch           text8        002F4
+__end_of_setdata         text4        00181
+__end_of_setpin          text3        002AC
+__end_of_waitstart       text1        00294
 __initialization         cinit        0001F
 __pbssBANK0              bssBANK0     00020
 __pbssBANK1              bssBANK1     000A0
@@ -646,21 +647,21 @@ __pcstackBANK0           cstackBANK0  00050
 __pcstackCOMMON          cstackCOMMON 00070
 __pintentry              intentry     00004
 __pmaintext              maintext     00033
-__pswtext1               swtext1      002B8
+__pswtext1               swtext1      002BE
 __ptext0                 text0        00000
-__ptext1                 text1        00275
-__ptext10                text10       002D8
-__ptext11                text11       0017B
-__ptext12                text12       001AE
-__ptext13                text13       001E1
-__ptext14                text14       00214
-__ptext2                 text2        002E0
-__ptext3                 text3        0028E
-__ptext4                 text4        00141
-__ptext5                 text5        002A6
-__ptext6                 text6        00247
-__ptext8                 text8        002E7
-__ptext9                 text9        002C8
+__ptext1                 text1        0027B
+__ptext10                text10       002DE
+__ptext11                text11       00181
+__ptext12                text12       001B4
+__ptext13                text13       001E7
+__ptext14                text14       0021A
+__ptext2                 text2        002E6
+__ptext3                 text3        00294
+__ptext4                 text4        00147
+__ptext5                 text5        002AC
+__ptext6                 text6        0024D
+__ptext8                 text8        002ED
+__ptext9                 text9        002CE
 __size_of_InterTimer     (abs)        00000
 __size_of___bmul         (abs)        00000
 __size_of_changeLED      (abs)        00000
@@ -676,25 +677,25 @@ __size_of_putch          (abs)        00000
 __size_of_setdata        (abs)        00000
 __size_of_setpin         (abs)        00000
 __size_of_waitstart      (abs)        00000
-_changeLED               text9        002C8
-_countup                 text6        00247
-_getch                   text2        002E0
+_changeLED               text9        002CE
+_countup                 text6        0024D
+_getch                   text2        002E6
 _led                     bssBANK0     00020
 _main                    maintext     00033
 _nWPUEN                  (abs)        004AF
-_no0                     text14       00214
-_no1                     text13       001E1
-_no2                     text12       001AE
-_no3                     text11       0017B
-_noxinit                 text10       002D8
-_putch                   text8        002E7
-_setdata                 text4        00141
-_setpin                  text3        0028E
+_no0                     text14       0021A
+_no1                     text13       001E7
+_no2                     text12       001B4
+_no3                     text11       00181
+_noxinit                 text10       002DE
+_putch                   text8        002ED
+_setdata                 text4        00147
+_setpin                  text3        00294
 _stoc                    bssBANK1     000A0
 _time                    bssCOMMON    00077
-_waitstart               text1        00275
+_waitstart               text1        0027B
 btemp                    (abs)        0007E
-clear_ram0               clrtext      002EE
+clear_ram0               clrtext      002F4
 countup@i                cstackBANK0  00052
 countup@j                cstackBANK0  00050
 end_of_initialization    cinit        0002F
@@ -780,7 +781,7 @@ Total ram usage:        6 bytes
 
  *************** function _waitstart *****************
  Defined at:
-		line 196 in file "ver0.0_20140727.c"
+		line 198 in file "ver0.0_20140727.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -871,7 +872,7 @@ Total ram usage:        0 bytes
 
  *************** function _setdata *****************
  Defined at:
-		line 189 in file "ver0.0_20140727.c"
+		line 191 in file "ver0.0_20140727.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -935,7 +936,7 @@ Total ram usage:        4 bytes
 
  *************** function _countup *****************
  Defined at:
-		line 174 in file "ver0.0_20140727.c"
+		line 176 in file "ver0.0_20140727.c"
  Parameters:    Size  Location     Type
   i               1    wreg     PTR unsigned char 
 		 -> main@i(1), 
@@ -1211,25 +1212,25 @@ MODULE INFORMATION
 
 Module		Function		Class		Link	Load	Size
 uart.c
-		_putch         		CODE           	02E7	0000	7
-		_getch         		CODE           	02E0	0000	7
+		_putch         		CODE           	02ED	0000	7
+		_getch         		CODE           	02E6	0000	7
 
 uart.c estimated size: 14
 
 /Applications/microchip/xc8/v1.32/sources/common/Umul8.c
-		___bmul        		CODE           	02A6	0000	18
+		___bmul        		CODE           	02AC	0000	18
 
 /Applications/microchip/xc8/v1.32/sources/common/Umul8.c estimated size: 18
 
 ver0.0_20140727.c
-		_countup       		CODE           	0247	0000	46
-		_main          		CODE           	0033	0000	270
-		_waitstart     		CODE           	0275	0000	25
-		_setdata       		CODE           	0141	0000	58
+		_countup       		CODE           	024D	0000	46
+		_main          		CODE           	0033	0000	276
+		_waitstart     		CODE           	027B	0000	25
+		_setdata       		CODE           	0147	0000	58
 		_InterTimer    		CODE           	0004	0000	25
-		_changeLED     		CODE           	02C8	0000	16
+		_changeLED     		CODE           	02CE	0000	16
 
-ver0.0_20140727.c estimated size: 440
+ver0.0_20140727.c estimated size: 446
 
 shared
 		__initializatio		CODE           	001F	0000	16
@@ -1237,12 +1238,12 @@ shared
 shared estimated size: 16
 
 sorce.c
-		_noxinit       		CODE           	02D8	0000	8
-		_no0           		CODE           	0214	0000	51
-		_no1           		CODE           	01E1	0000	51
-		_no2           		CODE           	01AE	0000	51
-		_no3           		CODE           	017B	0000	51
-		_setpin        		CODE           	028E	0000	24
+		_noxinit       		CODE           	02DE	0000	8
+		_no0           		CODE           	021A	0000	51
+		_no1           		CODE           	01E7	0000	51
+		_no2           		CODE           	01B4	0000	51
+		_no3           		CODE           	0181	0000	51
+		_setpin        		CODE           	0294	0000	24
 
 sorce.c estimated size: 236
 
