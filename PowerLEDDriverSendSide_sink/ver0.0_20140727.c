@@ -1,3 +1,4 @@
+
 /*
  * File:   ver0.0_20140727
  * Author: akihiro
@@ -18,6 +19,8 @@
 #define	_XTAL_FREQ 32MHz
 //??????
 #define DEB	RB2
+
+
 
 void changeLED(){
     if(time==0)
@@ -49,7 +52,7 @@ void interrupt InterTimer( void )
 *  ??????                                                                *
 *******************************************************************************/
 void waitdelay(){
-    __delay_ms(500);
+    __delay_ms(1);
 }
 void main()
 {
@@ -99,6 +102,7 @@ void main()
 //    }
     ANSELD=0x00;
      while(1){
+ //        while(1);
          switch(i){
             case 1:RB7=1; break;
             case 3:RB6=1; break;
@@ -108,11 +112,11 @@ void main()
             case 11:RB2=1; break;
             case 13:RB1=1; break;
             case 15:RB0=1; break;
-            case 16:i=0;PORTB=0x00;RD4=1;break;
-             default:PORTB=0x00;RD4=1;break;
+            case 16:i=0;PORTB=0x00;PORTD=0xFF;break;
+             default:PORTB=0x00;PORTD=0xFF;break;
          }
          waitdelay();
-         RD4=0;
+         PORTD=0b00001111;
          i++;
     }
 //     while(1){

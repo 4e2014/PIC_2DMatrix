@@ -95,9 +95,10 @@ void main()
         RD0=0;
         RD1=0;
         i=1;0;
-        TRISD=0b00111100;
         RD6=1;
      while(1){
+         while(RC4==0);
+         //__delay_ms(500);
          switch(i){
             case 1:RA7=1;break;
             case 2:RA6=1;break;
@@ -106,12 +107,9 @@ void main()
             case 5:RC2=1;break;
             case 6:RC3=1;break;
             case 7:RD0=1;break;
-            case 8:RD1=1;break;
+            case 8:RD1=1;i=0;break;
          }
-         if(i==9){
-             i=1;
-             continue;
-         }
+         //__delay_ms(500);
          while(RC4==1);
 
         RA7=0;
@@ -122,8 +120,11 @@ void main()
         RC3=0;
         RD0=0;
         RD1=0;
+        PORTC=0b11110000;
+        PORTA=0b00111111;
+        PORTD=0b11111100;
+
          i++;
-         while(RC4==0);
     }
 //     while(1){
 //         RD6=0;

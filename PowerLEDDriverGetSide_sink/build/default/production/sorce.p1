@@ -51,6 +51,8 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _PORTC `Vuc ~T0 @X0 0 e@14 ]
 "595
 [v _PORTD `Vuc ~T0 @X0 0 e@15 ]
+"656
+[v _PORTE `Vuc ~T0 @X0 0 e@16 ]
 [; ;htc.h: 21: extern const char __xc8_OPTIM_SPEED;
 [; ;htc.h: 24: extern void __builtin_software_breakpoint(void);
 [; ;pic16f1939.h: 47: extern volatile unsigned char INDF0 @ 0x000;
@@ -3731,7 +3733,10 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;sorce.c: 77: PORTD = 0b00000000 ;
 "77
 [e = _PORTD -> -> 0 `i `uc ]
-[; ;sorce.c: 78: }
+[; ;sorce.c: 78: PORTE=0x00;
 "78
+[e = _PORTE -> -> 0 `i `uc ]
+[; ;sorce.c: 79: }
+"79
 [e :UE 426 ]
 }

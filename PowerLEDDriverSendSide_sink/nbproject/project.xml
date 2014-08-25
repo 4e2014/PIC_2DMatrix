@@ -3,7 +3,7 @@
     <type>com.microchip.mplab.nbide.embedded.makeproject</type>
     <configuration>
         <data xmlns="http://www.netbeans.org/ns/make-project/1">
-            <name>PowerLEDDriverSendSide_sink</name>
+            <name>PowerLEDDriverSendSide_sync</name>
             <creation-uuid>f9b4d9bd-49e5-4785-a1cb-cb28c2e0246d</creation-uuid>
             <make-project-type>0</make-project-type>
             <c-extensions>c</c-extensions>

@@ -4569,7 +4569,7 @@ void waitstart();
 void putch(unsigned char);
 unsigned char getch();
 
-# 22 "ver0.0_20140727.c"
+# 25 "ver0.0_20140727.c"
 void changeLED(){
 if(time==0)
 noxinit();
@@ -4583,7 +4583,7 @@ else if(0==3)
 no3(time);
 }
 
-# 38
+# 41
 void interrupt InterTimer( void )
 {
 if (TMR0IF == 1) {
@@ -4595,9 +4595,9 @@ TMR0IF = 0 ;
 }
 }
 
-# 51
+# 54
 void waitdelay(){
-_delay((unsigned long)((500)*(32000000/4000.0)));
+_delay((unsigned long)((1)*(32000000/4000.0)));
 }
 void main()
 {
@@ -4639,9 +4639,10 @@ PORTD=0xFF;
 PORTE=0xFF;
 PORTB=0x00;
 
-# 100
+# 103
 ANSELD=0x00;
 while(1){
+
 switch(i){
 case 1:RB7=1; break;
 case 3:RB6=1; break;
@@ -4651,15 +4652,15 @@ case 9:RB3=1; break;
 case 11:RB2=1; break;
 case 13:RB1=1; break;
 case 15:RB0=1; break;
-case 16:i=0;PORTB=0x00;RD4=1;break;
-default:PORTB=0x00;RD4=1;break;
+case 16:i=0;PORTB=0x00;PORTD=0xFF;break;
+default:PORTB=0x00;PORTD=0xFF;break;
 }
 waitdelay();
-RD4=0;
+PORTD=0b00001111;
 i++;
 }
 
-# 132
+# 136
 while(1) {
 waitstart();
 for(i=0;i<16;i++){
