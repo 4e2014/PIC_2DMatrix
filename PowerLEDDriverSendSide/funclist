@@ -1,13 +1,11 @@
-i1_putch: CODE, 952 0 7
-_putch: CODE, 935 0 10
-_main: CODE, 84 0 549
-i1___wmul: CODE, 837 0 29
-_x2: CODE, 889 0 19
-_change: CODE, 633 0 174
-__initialization: CODE, 33 0 47
-_E2promRead: CODE, 908 0 15
-_InterTimer: CODE, 4 0 27
-_getch: CODE, 945 0 7
-___wmul: CODE, 807 0 30
-_setpin: CODE, 866 0 23
-Total: 937
+___awdiv: CODE, 776 0 84
+_main: CODE, 78 0 529
+i1___wmul: CODE, 969 0 29
+_x2: CODE, 860 0 45
+_change: CODE, 607 0 169
+__initialization: CODE, 28 0 46
+_E2promRead: CODE, 998 0 15
+_InterTimer: CODE, 4 0 22
+___wmul: CODE, 939 0 30
+_setpin: CODE, 905 0 34
+Total: 1003
