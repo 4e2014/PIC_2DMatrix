@@ -21,9 +21,14 @@
 char ledcount=0;
 char putdata[18][5]={0};
 char reservingNow=0;
-
+char fulg=0;
+//uartget()
+     char i,j,n,test[8][4];
+     char getdata[70]={0},getKeeping[16][2],getNum=0,onetime=0,resetFlug=0,gettingSuccess=0;
 void change(){
          ledcount++;
+         if(RD5==1)
+             ledcount=16;
 
          PORTA=putdata[ledcount][0];
          PORTB=putdata[ledcount][1];
@@ -34,58 +39,7 @@ void change(){
          if(ledcount==16)
             ledcount=0;
 }
-
-/*******************************************************************************
-*  InterTimer()   ??????????                                         *
-*******************************************************************************/
-void interrupt InterTimer( void )
-{
-     if (TMR0IF == 1) {           // ????0????????
-          TMR0 = T0COUT ;         // ????0????
-//          if(RD7)
-//            RD7=0;
-//          else
-//            RD7=1;
-
-          change();
-          if(RCIF)
-              reservingNow=1;
-//          putch(0x41);
-          TMR0IF = 0 ;            // ????0??????????
-     }
-}
-char x2(char num){
-    char i,ret=0;
-    if(num%2)
-        ret=1;
-    num=7-num/2;
-    for(i=0;i<num;i++)
-        ret=ret*2;
-    return ret;
-}
-/*******************************************************************************
-*  ??????                                                                *
-*******************************************************************************/
-void main()
-{
-     char i,j,n,test[8][4],individual=255;
-     char getdata[70]={0},getKeeping[16][2],getNum=0,onetime=0,resetFlug=0,gettingSuccess=0;
-     setpin();
-     init_comms();
-     individual=E2promRead(0x00);
-     OPTION_REG = 0b0000100 ; // ??????(Fosc/4)?TIMER0???????????????? 1:128
-     TMR0   = T0COUT ;         // ????0????
-     TMR0IF = 0 ;              // ????0?????(T0IF)?0???
-     time   = 0 ;              // ??????????????0???
-     TMR0IE = 1 ;              // ????0???(T0IE)?????
-     WPUB = 0xC0;
-     nWPUEN = 0;
-     GIE    = 0 ;              // ???????????
-//     while(individual==getch()){
-//         putch(individual);
-//         __delay_ms(100);
-//     }
-     while(1) {
+void uartget(){
 //         // 0x 47 65 74 ="Get"
 //         if(getNum>69)
 //             getNum=0;
@@ -148,7 +102,56 @@ void main()
             putdata[14][3]=putdata[14][3]|0x01;
             putdata[16][3]=putdata[16][3]|0x02;
          }
-         GIE=1;
-             while(1);
+}
+/*******************************************************************************
+*  InterTimer()   ??????????                                         *
+*******************************************************************************/
+void interrupt InterTimer( void )
+{
+     if (TMR0IF == 1) {           // ????0????????
+          TMR0 = T0COUT ;         // ????0????
+          uartget();
+          if(RCIF)
+              reservingNow=1;
+//          putch(0x41);
+          TMR0IF = 0 ;            // ????0??????????
+     }
+}
+char x2(char num){
+    char i,ret=0;
+    if(num%2)
+        ret=1;
+    num=7-num/2;
+    for(i=0;i<num;i++)
+        ret=ret*2;
+    return ret;
+}
+/*******************************************************************************
+*  ??????                                                                *
+*******************************************************************************/
+void main()
+{
+    char individual=255;
+     setpin();
+     init_comms();
+     individual=E2promRead(0x00);
+     OPTION_REG = 0b0000010 ; // ??????(Fosc/4)?TIMER0???????????????? 1:128
+     TMR0   = T0COUT ;         // ????0????
+     TMR0IF = 0 ;              // ????0?????(T0IF)?0???
+     time   = 0 ;              // ??????????????0???
+     TMR0IE = 1 ;              // ????0???(T0IE)?????
+     WPUB = 0xC0;
+     nWPUEN = 0;
+     GIE    = 0 ;              // ???????????
+//     while(individual==getch()){
+//         putch(individual);
+//         __delay_ms(100);
+//     }
+     uartget();
+     while(1) {
+         while(RD4==0);
+         change();
+         while(RD4==1);
+         change();
      }
 }

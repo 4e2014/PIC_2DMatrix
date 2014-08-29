@@ -112,13 +112,16 @@
 [v _putch putch `(v  1 e 0 0 ]
 "9
 [v _getch getch `(uc  1 e 1 0 ]
-"25 /Users/akihiro/GitHub/PIC_2DMatrix/PowerLEDDriverGetSide/ver0.0_20140727.c
+"28 /Users/akihiro/GitHub/PIC_2DMatrix/PowerLEDDriverGetSide/ver0.0_20140727.c
 [v _change change `(v  1 e 0 0 ]
-"41
+"42
+[v _uartget uartget `(v  1 e 0 0 ]
+[v i1_uartget uartget `(v  1 e 0 0 ]
+"109
 [v _InterTimer InterTimer `II(v  1 e 0 0 ]
-"57
+"120
 [v _x2 x2 `(uc  1 e 1 0 ]
-"69
+"132
 [v _main main `(v  1 e 0 0 ]
 "412 /Applications/microchip/xc8/v1.32/include/pic16f1939.h
 [v _PORTA PORTA `VEuc  1 e 1 @12 ]
@@ -198,6 +201,10 @@
 [v _RCIF RCIF `VEb  1 e 0 @141 ]
 "8400
 [v _RD RD `VEb  1 e 0 @3240 ]
+"8410
+[v _RD4 RD4 `VEb  1 e 0 @124 ]
+"8412
+[v _RD5 RD5 `VEb  1 e 0 @125 ]
 "8866
 [v _TMR0IE TMR0IE `VEb  1 e 0 @93 ]
 "8868
@@ -226,41 +233,50 @@
 [v _putdata putdata `[18][5]uc  1 e 90 @9110 ]
 "23
 [v _reservingNow reservingNow `uc  1 e 1 0 ]
-"69
+"24
+[v _fulg fulg `uc  1 e 1 0 ]
+"26
+[v _i i `uc  1 e 1 0 ]
+[v _j j `uc  1 e 1 0 ]
+[v _n n `uc  1 e 1 0 ]
+[v _test test `[8][4]uc  1 e 32 0 ]
+"27
+[v _getdata getdata `[70]uc  1 e 70 0 ]
+[v _getKeeping getKeeping `[16][2]uc  1 e 32 0 ]
+[v _getNum getNum `uc  1 e 1 0 ]
+[v _onetime onetime `uc  1 e 1 0 ]
+[v _resetFlug resetFlug `uc  1 e 1 0 ]
+[v _gettingSuccess gettingSuccess `uc  1 e 1 0 ]
+"132
 [v _main main `(v  1 e 0 0 ]
 {
-"72
-[v main@getdata getdata `[70]uc  1 a 70 0 ]
-[v main@getKeeping getKeeping `[16][2]uc  1 a 32 0 ]
-"71
-[v main@i i `uc  1 a 1 23 ]
-[v main@j j `uc  1 a 1 22 ]
-"72
-[v main@gettingSuccess gettingSuccess `uc  1 a 1 21 ]
-"71
-[v main@n n `uc  1 a 1 20 ]
-[v main@individual individual `uc  1 a 1 19 ]
-"72
-[v main@resetFlug resetFlug `uc  1 a 1 18 ]
-[v main@onetime onetime `uc  1 a 1 17 ]
-[v main@getNum getNum `uc  1 a 1 16 ]
-"71
-[v main@F3516 F3516 `[70]uc  1 s 70 F3516 ]
-"154
+"134
+[v main@individual individual `uc  1 a 1 27 ]
+"157
+} 0
+"42
+[v _uartget uartget `(v  1 e 0 0 ]
+{
+"105
 } 0
 "9 /Users/akihiro/GitHub/PIC_2DMatrix/PowerLEDDriverGetSide/sorce.c
 [v _setpin setpin `(v  1 e 0 0 ]
 {
 "36
 } 0
+"28 /Users/akihiro/GitHub/PIC_2DMatrix/PowerLEDDriverGetSide/ver0.0_20140727.c
+[v _change change `(v  1 e 0 0 ]
+{
+"41
+} 0
 "15 /Applications/microchip/xc8/v1.32/sources/common/Umul16.c
 [v ___wmul __wmul `(ui  1 e 2 0 ]
 {
 "17
-[v ___wmul@product product `ui  1 a 2 4 ]
+[v ___wmul@product product `ui  1 a 2 14 ]
 "15
-[v ___wmul@multiplier multiplier `ui  1 p 2 0 ]
-[v ___wmul@multiplicand multiplicand `ui  1 p 2 2 ]
+[v ___wmul@multiplier multiplier `ui  1 p 2 10 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 12 ]
 "53
 } 0
 "3 /Users/akihiro/GitHub/PIC_2DMatrix/PowerLEDDriverGetSide/sorce.c
@@ -269,18 +285,18 @@
 [v E2promRead@adr adr `uc  1 a 1 wreg ]
 [v E2promRead@adr adr `uc  1 a 1 wreg ]
 "5
-[v E2promRead@adr adr `uc  1 a 1 2 ]
+[v E2promRead@adr adr `uc  1 a 1 12 ]
 "8
 } 0
-"41 /Users/akihiro/GitHub/PIC_2DMatrix/PowerLEDDriverGetSide/ver0.0_20140727.c
+"109 /Users/akihiro/GitHub/PIC_2DMatrix/PowerLEDDriverGetSide/ver0.0_20140727.c
 [v _InterTimer InterTimer `II(v  1 e 0 0 ]
 {
-"56
+"119
 } 0
-"25
-[v _change change `(v  1 e 0 0 ]
+"42
+[v i1_uartget uartget `(v  1 e 0 0 ]
 {
-"36
+"105
 } 0
 "15 /Applications/microchip/xc8/v1.32/sources/common/Umul16.c
 [v i1___wmul __wmul `(ui  1 e 2 0 ]
