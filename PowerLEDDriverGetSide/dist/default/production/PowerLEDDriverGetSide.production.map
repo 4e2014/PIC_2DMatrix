@@ -5,7 +5,7 @@ Linker command line:
 --edf=/Applications/microchip/xc8/v1.32/dat/en_msgs.txt -cs \
   -h+dist/default/production/PowerLEDDriverGetSide.production.sym \
   --cmf=dist/default/production/PowerLEDDriverGetSide.production.cmf -z \
-  -Q16F1939 -o/tmp/cgt7o0eBO \
+  -Q16F1939 -o/tmp/cgtuBqkdx \
   -Mdist/default/production/PowerLEDDriverGetSide.production.map -E1 \
   -ver=XC8 -ASTACK=02120h-0231fh -pstack=STACK -ACONST=00h-0FFhx64 \
   -ACODE=00h-07FFhx8 -ASTRCODE=00h-03FFFh -AENTRY=00h-0FFhx64 \
@@ -31,7 +31,7 @@ Linker command line:
   -ppowerup=CODE -pcinit=CODE -pfunctab=CODE -ACONFIG=08007h-08008h \
   -pconfig=CONFIG -DCONFIG=2 -AIDLOC=08000h-08003h -pidloc=IDLOC -DIDLOC=2 \
   -AEEDATA=00h-0FFh/0F000h -peeprom_data=EEDATA -DEEDATA=2 -DCODE=2 \
-  -DSTRCODE=2 -DSTRING=2 -DCONST=2 -DENTRY=2 -k /tmp/cgt2vUeAz.obj \
+  -DSTRCODE=2 -DSTRING=2 -DCONST=2 -DENTRY=2 -k /tmp/cgtP0xFGU.obj \
   dist/default/production/PowerLEDDriverGetSide.production.obj 
 
 Object code version is 3.11
@@ -41,24 +41,24 @@ Machine type is 16F1939
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-/tmp/cgt2vUeAz.obj
+/tmp/cgtP0xFGU.obj
                 end_init                             1A       1A        2        8       0
                 reset_vec                             0        0        2        0       0
                 config                             8007     8007        2    1000E       0
 dist/default/production/PowerLEDDriverGetSide.production.obj
                 cinit                                1C       1C       3F        8       0
                 intentry                              4        4       16        8       0
-                text8                               441      441       1D        8       0
+                text8                               446      446       1D        8       0
                 text7                               1B9      1B9      15E        8       0
-                text5                               45E      45E        F        8       0
-                text4                               423      423       1E        8       0
+                text5                               463      463        F        8       0
+                text4                               428      428       1E        8       0
                 text3                               317      317       B0        8       0
-                text2                               401      401       22        8       0
+                text2                               406      406       22        8       0
                 text1                                5B       5B      15E        8       0
-                maintext                            3C7      3C7       3A        8       0
+                maintext                            3C7      3C7       3F        8       0
                 cstackBANK0                          45       45       1C       20       1
                 cstackCOMMON                         70       70        7       70       1
-                clrtext                             46D      46D        C        8       0
+                clrtext                             472      472        C        8       0
                 bssBANK3                            1A0      1A0       30      1A0       1
                 bssBANK2                            120      120       46      120       1
                 bssBANK1                             A0       A0       50       A0       1
@@ -76,15 +76,15 @@ TOTAL           Name                               Link     Load   Length     Sp
                 cinit                                1C       1C       3F         0
                 intentry                              4        4       16         0
                 reset_vec                             0        0        2         0
-                text8                               441      441       1D         0
+                text8                               446      446       1D         0
                 text7                               1B9      1B9      15E         0
-                text5                               45E      45E        F         0
-                text4                               423      423       1E         0
+                text5                               463      463        F         0
+                text4                               428      428       1E         0
                 text3                               317      317       B0         0
-                text2                               401      401       22         0
+                text2                               406      406       22         0
                 text1                                5B       5B      15E         0
-                maintext                            3C7      3C7       3A         0
-                clrtext                             46D      46D        C         0
+                maintext                            3C7      3C7       3F         0
+                clrtext                             472      472        C         0
 
         CLASS   STRCODE        
 
@@ -252,7 +252,7 @@ TOTAL           Name                               Link     Load   Length     Sp
 SEGMENTS        Name                           Load    Length   Top    Selector   Space  Class     Delta
 
                 reset_vec                      000000  000002  000002         0       0  CODE        2
-                intentry                       000004  000475  000479         8       0  CODE        2
+                intentry                       000004  00047A  00047E         8       0  CODE        2
                 bssBANK0                       000020  000042  000062        20       1  BANK0       1
                 cstackCOMMON                   000070  00000C  00007C        70       1  COMMON      1
                 bssBANK1                       0000A0  000050  0000F0        A0       1  BANK1       1
@@ -277,13 +277,13 @@ UNUSED ADDRESS RANGES
         BANK9            004A0-004EF              50           1
         BIGRAM           02000-023EF             3F0           1
         CODE             00002-00003               2           2
-                         00479-03FFF             800
+                         0047E-03FFF             800
         COMMON           0007C-0007D               2           1
         CONST            00002-00003               2           2
-                         00479-03FFF             100
+                         0047E-03FFF             100
         EEDATA           0F000-0F0FF             100           2
         ENTRY            00002-00003               2           2
-                         00479-03FFF             100
+                         0047E-03FFF             100
         IDLOC            08000-08003               4           2
         RAM              00062-0006F               E           1
                          00166-0016F               A
@@ -330,9 +330,9 @@ UNUSED ADDRESS RANGES
         SFR9             00480-0049F              20           1
         STACK            02120-0231F             200           1
         STRCODE          00002-00003               2           2
-                         00479-03FFF            3B87
+                         0047E-03FFF            3B82
         STRING           00002-00003               2           2
-                         00479-03FFF             100
+                         0047E-03FFF             100
 
                                   Symbol Table
 
@@ -348,7 +348,7 @@ _CCP1CON                 (abs)        00293
 _CCP2CON                 (abs)        0029A
 _CPSCON0                 (abs)        0001E
 _CPSCON1                 (abs)        0001F
-_E2promRead              text5        0045E
+_E2promRead              text5        00463
 _EEADR                   (abs)        00191
 _EEDATA                  (abs)        00193
 _GIE                     (abs)        0005F
@@ -599,19 +599,19 @@ __S3                     (abs)        00000
 ___int_sp                stack        00000
 ___latbits               (abs)        00003
 ___sp                    stack        00000
-___wmul                  text4        00423
+___wmul                  text4        00428
 ___wmul@multiplicand     cstackBANK0  00051
 ___wmul@multiplier       cstackBANK0  0004F
 ___wmul@product          cstackBANK0  00053
-__end_of_E2promRead      text5        0046D
+__end_of_E2promRead      text5        00472
 __end_of_InterTimer      intentry     0001A
-__end_of___wmul          text4        00441
+__end_of___wmul          text4        00446
 __end_of__initialization cinit        00057
 __end_of_change          text3        003C7
-__end_of_main            maintext     00401
-__end_of_setpin          text2        00423
+__end_of_main            maintext     00406
+__end_of_setpin          text2        00428
 __end_of_uartget         text1        001B9
-__end_ofi1___wmul        text8        0045E
+__end_ofi1___wmul        text8        00463
 __end_ofi1_uartget       text7        00317
 __initialization         cinit        0001C
 __pbssBANK0              bssBANK0     00020
@@ -626,12 +626,12 @@ __pintentry              intentry     00004
 __pmaintext              maintext     003C7
 __pnvBANK0               nvBANK0      00061
 __ptext1                 text1        0005B
-__ptext2                 text2        00401
+__ptext2                 text2        00406
 __ptext3                 text3        00317
-__ptext4                 text4        00423
-__ptext5                 text5        0045E
+__ptext4                 text4        00428
+__ptext5                 text5        00463
 __ptext7                 text7        001B9
-__ptext8                 text8        00441
+__ptext8                 text8        00446
 __size_of_E2promRead     (abs)        00000
 __size_of_InterTimer     (abs)        00000
 __size_of___wmul         (abs)        00000
@@ -658,15 +658,15 @@ _onetime                 bssCOMMON    00079
 _putdata                 (abs)        02396
 _reservingNow            bssCOMMON    0007A
 _resetFlug               bssCOMMON    0007B
-_setpin                  text2        00401
+_setpin                  text2        00406
 _stoc                    bssBANK1     000A0
 _test                    bssBANK1     000D0
 _time                    bssBANK0     00044
 _uartget                 text1        0005B
 btemp                    (abs)        0007E
-clear_ram0               clrtext      0046D
+clear_ram0               clrtext      00472
 end_of_initialization    cinit        00057
-i1___wmul                text8        00441
+i1___wmul                text8        00446
 i1___wmul@multiplicand   cstackCOMMON 00072
 i1___wmul@multiplier     cstackCOMMON 00070
 i1___wmul@product        cstackCOMMON 00074
@@ -986,28 +986,28 @@ MODULE INFORMATION
 
 Module		Function		Class		Link	Load	Size
 ver0.0_20140727.c
-		_main          		CODE           	03C7	0000	58
+		_main          		CODE           	03C7	0000	63
 		_change        		CODE           	0317	0000	176
 		_uartget       		CODE           	005B	0000	350
 		_InterTimer    		CODE           	0004	0000	22
 
-ver0.0_20140727.c estimated size: 606
+ver0.0_20140727.c estimated size: 611
 
 /Applications/microchip/xc8/v1.32/sources/common/Umul16.c
-		___wmul        		CODE           	0423	0000	30
+		___wmul        		CODE           	0428	0000	30
 
 /Applications/microchip/xc8/v1.32/sources/common/Umul16.c estimated size: 30
 
 shared
-		i1___wmul      		CODE           	0441	0000	29
+		i1___wmul      		CODE           	0446	0000	29
 		i1_uartget     		CODE           	01B9	0000	350
 		__initializatio		CODE           	001C	0000	59
 
 shared estimated size: 438
 
 sorce.c
-		_E2promRead    		CODE           	045E	0000	15
-		_setpin        		CODE           	0401	0000	34
+		_E2promRead    		CODE           	0463	0000	15
+		_setpin        		CODE           	0406	0000	34
 
 sorce.c estimated size: 49
 

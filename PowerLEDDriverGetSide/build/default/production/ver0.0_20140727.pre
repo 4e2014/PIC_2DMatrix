@@ -4658,7 +4658,9 @@ GIE = 0 ;
 
 
 
+PORTB=0xff;
 uartget();
+PORTB=0x00;
 while(1) {
 while(RD4==0);
 change();

@@ -9,7 +9,11 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _PORTD `Vuc ~T0 @X0 0 e@15 ]
 "656
 [v _PORTE `Vuc ~T0 @X0 0 e@16 ]
-"8868
+[v F3481 `(v ~T0 @X0 1 tf1`ul ]
+"154 /Applications/microchip/xc8/v1.32/include/pic.h
+[v __delay `JF3481 ~T0 @X0 0 e ]
+[p i __delay ]
+"8868 /Applications/microchip/xc8/v1.32/include/pic16f1939.h
 [v _TMR0IF `Vb ~T0 @X0 0 e@90 ]
 "855
 [v _TMR0 `Vuc ~T0 @X0 0 e@21 ]
@@ -3427,25 +3431,28 @@ Version 3.2 HI-TECH Software Intermediate Code
 "35
 [e = _ledcount -> -> 0 `i `uc ]
 [e :U 374 ]
-[; ;ver0.0_20140727.c: 36: }
+[; ;ver0.0_20140727.c: 36: _delay((unsigned long)((500)*(32000000/4000.0)));
 "36
+[e ( __delay (1 -> * -> -> 500 `i `d / -> -> 32000000 `l `d .4000.0 `ul ]
+[; ;ver0.0_20140727.c: 37: }
+"37
 [e :UE 373 ]
 }
-[v F3503 `(v ~T0 @X0 1 tf ]
-"41
-[v _InterTimer `IF3503 ~T0 @X0 1 e ]
+[v F3504 `(v ~T0 @X0 1 tf ]
 "42
+[v _InterTimer `IF3504 ~T0 @X0 1 e ]
+"43
 {
-[; ;ver0.0_20140727.c: 41: void interrupt InterTimer( void )
-[; ;ver0.0_20140727.c: 42: {
+[; ;ver0.0_20140727.c: 42: void interrupt InterTimer( void )
+[; ;ver0.0_20140727.c: 43: {
 [e :U _InterTimer ]
 [f ]
-[; ;ver0.0_20140727.c: 43: if (TMR0IF == 1) {
-"43
+[; ;ver0.0_20140727.c: 44: if (TMR0IF == 1) {
+"44
 [e $ ! == -> _TMR0IF `i -> 1 `i 376  ]
 {
-[; ;ver0.0_20140727.c: 44: TMR0 = 61 ;
-"44
+[; ;ver0.0_20140727.c: 45: TMR0 = 61 ;
+"45
 [e = _TMR0 -> -> 61 `i `uc ]
 [; ;ver0.0_20140727.c: 50: change();
 "50
@@ -3526,13 +3533,13 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _i `uc ~T0 @X0 1 a ]
 [v _j `uc ~T0 @X0 1 a ]
 [v _n `uc ~T0 @X0 1 a ]
-[v F3513 `uc ~T0 @X0 -> 4 `i t ]
-[v _test `F3513 ~T0 @X0 -> 8 `i a ]
+[v F3514 `uc ~T0 @X0 -> 4 `i t ]
+[v _test `F3514 ~T0 @X0 -> 8 `i a ]
 [v _individual `uc ~T0 @X0 1 a ]
 [; ;ver0.0_20140727.c: 71: char i,j,n,test[8][4],individual=255;
 [e = _individual -> -> 255 `i `uc ]
-[v F3516 `uc ~T0 @X0 -> 70 `i s ]
-[i F3516
+[v F3517 `uc ~T0 @X0 -> 70 `i s ]
+[i F3517
 :U ..
 "72
 -> -> 0 `i `uc
@@ -3540,9 +3547,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 ]
 [v _getdata `uc ~T0 @X0 -> 70 `i a ]
 [; ;ver0.0_20140727.c: 72: char getdata[70]={0},getKeeping[16][2],getNum=0,onetime=0,resetFlug=0,gettingSuccess=0;
-[e = _getdata F3516 ]
-[v F3518 `uc ~T0 @X0 -> 2 `i t ]
-[v _getKeeping `F3518 ~T0 @X0 -> 16 `i a ]
+[e = _getdata F3517 ]
+[v F3519 `uc ~T0 @X0 -> 2 `i t ]
+[v _getKeeping `F3519 ~T0 @X0 -> 16 `i a ]
 [v _getNum `uc ~T0 @X0 1 a ]
 [e = _getNum -> -> 0 `i `uc ]
 [v _onetime `uc ~T0 @X0 1 a ]
@@ -3716,28 +3723,73 @@ Version 3.2 HI-TECH Software Intermediate Code
 [e :U 402 ]
 "149
 }
+[; ;ver0.0_20140727.c: 149: }
+[; ;ver0.0_20140727.c: 150: for(i=1;i<17;i++){
 "150
+{
+[e = _i -> -> 1 `i `uc ]
+[e $ < -> _i `i -> 17 `i 407  ]
+[e $U 408  ]
+[e :U 407 ]
+{
+[; ;ver0.0_20140727.c: 152: putdata[i][0]=0xff&0b11111110;
+"152
+[e = *U + &U *U + &U _putdata * -> _i `ux -> * -> # *U &U *U &U _putdata `ui -> -> 5 `i `ui `ux * -> -> -> 0 `i `ui `ux -> -> # *U &U *U + &U _putdata * -> _i `ux -> * -> # *U &U *U &U _putdata `ui -> -> 5 `i `ui `ux `ui `ux -> & -> 255 `i -> 254 `i `uc ]
+[; ;ver0.0_20140727.c: 154: putdata[i][2]=0xff&0b00001111;
+"154
+[e = *U + &U *U + &U _putdata * -> _i `ux -> * -> # *U &U *U &U _putdata `ui -> -> 5 `i `ui `ux * -> -> -> 2 `i `ui `ux -> -> # *U &U *U + &U _putdata * -> _i `ux -> * -> # *U &U *U &U _putdata `ui -> -> 5 `i `ui `ux `ui `ux -> & -> 255 `i -> 15 `i `uc ]
+[; ;ver0.0_20140727.c: 156: putdata[i][3]=(0xff&0b00000001)|((0xff&0b10000000)>>6);
+"156
+[e = *U + &U *U + &U _putdata * -> _i `ux -> * -> # *U &U *U &U _putdata `ui -> -> 5 `i `ui `ux * -> -> -> 3 `i `ui `ux -> -> # *U &U *U + &U _putdata * -> _i `ux -> * -> # *U &U *U &U _putdata `ui -> -> 5 `i `ui `ux `ui `ux -> | & -> 255 `i -> 1 `i >> & -> 255 `i -> 128 `i -> 6 `i `uc ]
+[; ;ver0.0_20140727.c: 157: if(i==16)
+"157
+[e $ ! == -> _i `i -> 16 `i 410  ]
+[; ;ver0.0_20140727.c: 158: putdata[i][3]=putdata[i][3]|0b10110000;
+"158
+[e = *U + &U *U + &U _putdata * -> _i `ux -> * -> # *U &U *U &U _putdata `ui -> -> 5 `i `ui `ux * -> -> -> 3 `i `ui `ux -> -> # *U &U *U + &U _putdata * -> _i `ux -> * -> # *U &U *U &U _putdata `ui -> -> 5 `i `ui `ux `ui `ux -> | -> *U + &U *U + &U _putdata * -> _i `ux -> * -> # *U &U *U &U _putdata `ui -> -> 5 `i `ui `ux * -> -> -> 3 `i `ui `ux -> -> # *U &U *U + &U _putdata * -> _i `ux -> * -> # *U &U *U &U _putdata `ui -> -> 5 `i `ui `ux `ui `ux `i -> 176 `i `uc ]
+[e $U 411  ]
+"159
+[e :U 410 ]
+[; ;ver0.0_20140727.c: 159: else if(i%2==0)
+[e $ ! == % -> _i `i -> 2 `i -> 0 `i 412  ]
+[; ;ver0.0_20140727.c: 160: putdata[i][3]=putdata[i][3]|0b10010000;
+"160
+[e = *U + &U *U + &U _putdata * -> _i `ux -> * -> # *U &U *U &U _putdata `ui -> -> 5 `i `ui `ux * -> -> -> 3 `i `ui `ux -> -> # *U &U *U + &U _putdata * -> _i `ux -> * -> # *U &U *U &U _putdata `ui -> -> 5 `i `ui `ux `ui `ux -> | -> *U + &U *U + &U _putdata * -> _i `ux -> * -> # *U &U *U &U _putdata `ui -> -> 5 `i `ui `ux * -> -> -> 3 `i `ui `ux -> -> # *U &U *U + &U _putdata * -> _i `ux -> * -> # *U &U *U &U _putdata `ui -> -> 5 `i `ui `ux `ui `ux `i -> 144 `i `uc ]
+[e :U 412 ]
+"162
+[e :U 411 ]
+[; ;ver0.0_20140727.c: 162: putdata[i][4]=(getKeeping[i][1]&0b01110000)>>4;
+[e = *U + &U *U + &U _putdata * -> _i `ux -> * -> # *U &U *U &U _putdata `ui -> -> 5 `i `ui `ux * -> -> -> 4 `i `ui `ux -> -> # *U &U *U + &U _putdata * -> _i `ux -> * -> # *U &U *U &U _putdata `ui -> -> 5 `i `ui `ux `ui `ux -> >> & -> *U + &U *U + &U _getKeeping * -> _i `ux -> * -> # *U &U *U &U _getKeeping `ui -> -> 2 `i `ui `ux * -> -> -> 1 `i `ui `ux -> -> # *U &U *U + &U _getKeeping * -> _i `ux -> * -> # *U &U *U &U _getKeeping `ui -> -> 2 `i `ui `ux `ui `ux `i -> 112 `i -> 4 `i `uc ]
+"163
+}
+"150
+[e ++ _i -> -> 1 `i `uc ]
+[e $ < -> _i `i -> 17 `i 407  ]
+[e :U 408 ]
+"163
+}
+"164
 }
 [e :U 394 ]
-[; ;ver0.0_20140727.c: 149: }
-[; ;ver0.0_20140727.c: 150: }
-[; ;ver0.0_20140727.c: 151: GIE=1;
-"151
+[; ;ver0.0_20140727.c: 163: }
+[; ;ver0.0_20140727.c: 164: }
+[; ;ver0.0_20140727.c: 165: GIE=1;
+"165
 [e = _GIE -> -> 1 `i `b ]
-[; ;ver0.0_20140727.c: 152: while(1);
-"152
-[e :U 408 ]
-[e :U 407 ]
-[e $U 408  ]
-[e :U 409 ]
-"153
+[; ;ver0.0_20140727.c: 166: while(1);
+"166
+[e :U 414 ]
+[e :U 413 ]
+[e $U 414  ]
+[e :U 415 ]
+"167
 }
 [e :U 388 ]
 "90
 [e $U 389  ]
 [e :U 390 ]
-[; ;ver0.0_20140727.c: 153: }
-[; ;ver0.0_20140727.c: 154: }
-"154
+[; ;ver0.0_20140727.c: 167: }
+[; ;ver0.0_20140727.c: 168: }
+"168
 [e :UE 384 ]
 }

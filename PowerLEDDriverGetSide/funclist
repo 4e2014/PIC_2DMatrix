@@ -1,11 +1,11 @@
-_main: CODE, 967 0 58
-i1___wmul: CODE, 1089 0 29
-i1_uartget: CODE, 441 0 350
-_change: CODE, 791 0 176
-__initialization: CODE, 28 0 59
-_E2promRead: CODE, 1118 0 15
-_uartget: CODE, 91 0 350
+_main: CODE, 841 0 63
+i1___wmul: CODE, 968 0 29
+i1_uartget: CODE, 379 0 286
+_change: CODE, 665 0 176
+__initialization: CODE, 28 0 61
+_E2promRead: CODE, 997 0 15
+_uartget: CODE, 93 0 286
 _InterTimer: CODE, 4 0 22
-___wmul: CODE, 1059 0 30
-_setpin: CODE, 1025 0 34
-Total: 1123
+___wmul: CODE, 938 0 30
+_setpin: CODE, 904 0 34
+Total: 1002

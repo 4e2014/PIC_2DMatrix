@@ -54,12 +54,12 @@ void uartget(){
 //         else if(resetFlug){
 //             if(resetFlug==1){
 //                 if(onetime==0x65)
-//                     resetFlug==2;
+//                     resetFlug=2;
 //                 else
 //                     resetFlug=0;
 //             }
 //             else if(resetFlug==2){
-//                 if(onetime=0x74)
+//                 if(onetime==0x74)
 //                     getNum=0;
 //                 else
 //                     resetFlug=0;
@@ -79,12 +79,12 @@ void uartget(){
          for(i=0;i<64;i++)
             getdata[i]=0xff;
          if(gettingSuccess==2){
-             for(i=1;i<17;i++){
-                 for(j=0;j<2;j++){
-                     n=(i-1)*4+(j+2);
-                     getKeeping[i][j]=getdata[n];
-                 }
-             }
+//             for(i=1;i<17;i++){
+//                 for(j=0;j<2;j++){
+//                     n=(i-1)*4+(j+2);
+//                    getKeeping[i][j]=getdata[n];
+//                 }
+//             }
              for(i=1;i<17;i++){
                  //A
                  putdata[i][0]=(getKeeping[i][1]&0b00011111)<<1;
@@ -147,7 +147,9 @@ void main()
 //         putch(individual);
 //         __delay_ms(100);
 //     }
+     PORTB=0xff;
      uartget();
+     PORTB=0x00;
      while(1) {
          while(RD4==0);
          change();

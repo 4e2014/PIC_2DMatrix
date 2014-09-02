@@ -33,6 +33,7 @@ void change(){
 
          if(ledcount==16)
             ledcount=0;
+         __delay_ms(500);
 }
 
 /*******************************************************************************
@@ -46,8 +47,7 @@ void interrupt InterTimer( void )
 //            RD7=0;
 //          else
 //            RD7=1;
-
-          change();
+         change();
           if(RCIF)
               reservingNow=1;
 //          putch(0x41);
@@ -140,6 +140,20 @@ void main()
                  putdata[i][2]=getKeeping[i][1]&0b00001111;
                  //D
                  putdata[i][3]=(getKeeping[i][0]&0b00000001)|((getKeeping[i][1]&0b10000000)>>6);
+                 if(i==16)
+                     putdata[i][3]=putdata[i][3]|0b10110000;
+                 else if(i%2==0)
+                     putdata[i][3]=putdata[i][3]|0b10010000;
+                 //E
+                 putdata[i][4]=(getKeeping[i][1]&0b01110000)>>4;
+             }
+             for(i=1;i<17;i++){
+                 //A
+                 putdata[i][0]=0xff&0b11111110;
+                 //C
+                 putdata[i][2]=0xff&0b00001111;
+                 //D
+                 putdata[i][3]=(0xff&0b00000001)|((0xff&0b10000000)>>6);
                  if(i==16)
                      putdata[i][3]=putdata[i][3]|0b10110000;
                  else if(i%2==0)

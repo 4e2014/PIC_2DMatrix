@@ -114,7 +114,7 @@
 [v _getch getch `(uc  1 e 1 0 ]
 "25 /Users/akihiro/GitHub/PIC_2DMatrix/PowerLEDDriverSendSide/ver0.0_20140727.c
 [v _change change `(v  1 e 0 0 ]
-"41
+"42
 [v _InterTimer InterTimer `II(v  1 e 0 0 ]
 "57
 [v _x2 x2 `(uc  1 e 1 0 ]
@@ -245,8 +245,8 @@
 [v main@onetime onetime `uc  1 a 1 63 ]
 [v main@getNum getNum `uc  1 a 1 62 ]
 "71
-[v main@F3516 F3516 `[70]uc  1 s 70 F3516 ]
-"154
+[v main@F3517 F3517 `[70]uc  1 s 70 F3517 ]
+"168
 } 0
 "57
 [v _x2 x2 `(uc  1 e 1 0 ]
@@ -297,7 +297,7 @@
 [v E2promRead@adr adr `uc  1 a 1 2 ]
 "8
 } 0
-"41 /Users/akihiro/GitHub/PIC_2DMatrix/PowerLEDDriverSendSide/ver0.0_20140727.c
+"42 /Users/akihiro/GitHub/PIC_2DMatrix/PowerLEDDriverSendSide/ver0.0_20140727.c
 [v _InterTimer InterTimer `II(v  1 e 0 0 ]
 {
 "56
@@ -305,7 +305,7 @@
 "25
 [v _change change `(v  1 e 0 0 ]
 {
-"36
+"37
 } 0
 "15 /Applications/microchip/xc8/v1.32/sources/common/Umul16.c
 [v i1___wmul __wmul `(ui  1 e 2 0 ]

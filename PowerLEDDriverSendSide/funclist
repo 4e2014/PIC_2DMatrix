@@ -1,11 +1,11 @@
-___awdiv: CODE, 776 0 84
-_main: CODE, 78 0 529
-i1___wmul: CODE, 969 0 29
-_x2: CODE, 860 0 45
-_change: CODE, 607 0 169
+___awdiv: CODE, 1069 0 84
+_main: CODE, 78 0 810
+i1___wmul: CODE, 1262 0 29
+_x2: CODE, 1153 0 45
+_change: CODE, 888 0 181
 __initialization: CODE, 28 0 46
-_E2promRead: CODE, 998 0 15
+_E2promRead: CODE, 1291 0 15
 _InterTimer: CODE, 4 0 22
-___wmul: CODE, 939 0 30
-_setpin: CODE, 905 0 34
-Total: 1003
+___wmul: CODE, 1232 0 30
+_setpin: CODE, 1198 0 34
+Total: 1296

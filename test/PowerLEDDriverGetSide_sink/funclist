@@ -1,0 +1,8 @@
+_main: CODE, 76 0 405
+i1___wmul: CODE, 680 0 29
+_change: CODE, 481 0 169
+__initialization: CODE, 28 0 44
+_InterTimer: CODE, 4 0 22
+___wmul: CODE, 650 0 30
+_setpin: CODE, 709 0 23
+Total: 722
