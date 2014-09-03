@@ -33,20 +33,6 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _PORTC `Vuc ~T0 @X0 0 e@14 ]
 "595
 [v _PORTD `Vuc ~T0 @X0 0 e@15 ]
-"4815
-[v _CCP2CON `Vuc ~T0 @X0 0 e@666 ]
-"4465
-[v _CCP1CON `Vuc ~T0 @X0 0 e@659 ]
-"1173
-[v _CPSCON0 `Vuc ~T0 @X0 0 e@30 ]
-"1232
-[v _CPSCON1 `Vuc ~T0 @X0 0 e@31 ]
-"2485
-[v _LATD `Vuc ~T0 @X0 0 e@271 ]
-"6180
-[v _LCDCON `Vuc ~T0 @X0 0 e@1937 ]
-"6608
-[v _LCDSE2 `Vuc ~T0 @X0 0 e@1946 ]
 [; ;htc.h: 21: extern const char __xc8_OPTIM_SPEED;
 [; ;htc.h: 24: extern void __builtin_software_breakpoint(void);
 [; ;pic16f1939.h: 47: extern volatile unsigned char INDF0 @ 0x000;
@@ -3416,7 +3402,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;sorce.c: 12: ANSELB = 0b00000000 ;
 "12
 [e = _ANSELB -> -> 0 `i `uc ]
-[; ;sorce.c: 13: ANSELD = 0x00 ;
+[; ;sorce.c: 13: ANSELD = 0b00000000 ;
 "13
 [e = _ANSELD -> -> 0 `i `uc ]
 [; ;sorce.c: 14: ANSELE = 0b00000000 ;
@@ -3431,9 +3417,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;sorce.c: 18: TRISC = 0b10110000 ;
 "18
 [e = _TRISC -> -> 176 `i `uc ]
-[; ;sorce.c: 19: TRISD = 0b00001100 ;
+[; ;sorce.c: 19: TRISD = 0b00001110 ;
 "19
-[e = _TRISD -> -> 12 `i `uc ]
+[e = _TRISD -> -> 14 `i `uc ]
 [; ;sorce.c: 20: TRISE = 0X00 ;
 "20
 [e = _TRISE -> -> 0 `i `uc ]
@@ -3449,28 +3435,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;sorce.c: 25: PORTD = 0b00000000 ;
 "25
 [e = _PORTD -> -> 0 `i `uc ]
-[; ;sorce.c: 27: CCP2CON=0x00;
+[; ;sorce.c: 27: }
 "27
-[e = _CCP2CON -> -> 0 `i `uc ]
-[; ;sorce.c: 28: CCP1CON=0x00;
-"28
-[e = _CCP1CON -> -> 0 `i `uc ]
-[; ;sorce.c: 30: CPSCON0 =0x00;
-"30
-[e = _CPSCON0 -> -> 0 `i `uc ]
-[; ;sorce.c: 31: CPSCON1 =0x00;
-"31
-[e = _CPSCON1 -> -> 0 `i `uc ]
-[; ;sorce.c: 32: LATD =0x00;
-"32
-[e = _LATD -> -> 0 `i `uc ]
-[; ;sorce.c: 33: LCDCON =0x00;
-"33
-[e = _LCDCON -> -> 0 `i `uc ]
-[; ;sorce.c: 34: LCDSE2 =0x00;
-"34
-[e = _LCDSE2 -> -> 0 `i `uc ]
-[; ;sorce.c: 36: }
-"36
 [e :UE 374 ]
 }
