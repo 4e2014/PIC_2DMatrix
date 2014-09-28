@@ -1,18 +1,11 @@
-_waitdelay: CODE, 715 0 11
-_putch: CODE, 741 0 7
-_countup: CODE, 586 0 46
-_main: CODE, 51 0 273
-_waitstart: CODE, 632 0 25
-_setdata: CODE, 324 0 58
-__initialization: CODE, 31 0 16
-_InterTimer: CODE, 4 0 25
-_noxinit: CODE, 726 0 8
-_no0: CODE, 535 0 51
-_getch: CODE, 734 0 7
-_no1: CODE, 484 0 51
-_changeLED: CODE, 699 0 16
-_no2: CODE, 433 0 51
-_no3: CODE, 382 0 51
-___bmul: CODE, 681 0 18
-_setpin: CODE, 657 0 24
-Total: 738
+___awdiv: CODE, 1019 0 84
+_main: CODE, 78 0 772
+i1___wmul: CODE, 1178 0 29
+_x2: CODE, 1103 0 45
+_change: CODE, 850 0 169
+__initialization: CODE, 28 0 46
+_E2promRead: CODE, 1231 0 15
+_InterTimer: CODE, 4 0 22
+___wmul: CODE, 1148 0 30
+_setpin: CODE, 1207 0 24
+Total: 1236
