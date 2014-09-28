@@ -50,6 +50,8 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _nWPUEN `Vb ~T0 @X0 0 e@1199 ]
 "8028
 [v _GIE `Vb ~T0 @X0 0 e@95 ]
+"50 uart.h
+[v _getch `(uc ~T0 @X0 0 ef ]
 [; ;htc.h: 21: extern const char __xc8_OPTIM_SPEED;
 [; ;htc.h: 24: extern void __builtin_software_breakpoint(void);
 [; ;pic16f1939.h: 47: extern volatile unsigned char INDF0 @ 0x000;
@@ -3654,318 +3656,248 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;ver0.0_20140727.c: 96: nWPUEN = 0;
 "96
 [e = _nWPUEN -> -> 0 `i `b ]
-[; ;ver0.0_20140727.c: 97: GIE = 0 ;
+[; ;ver0.0_20140727.c: 97: GIE = 1 ;
 "97
-[e = _GIE -> -> 0 `i `b ]
+[e = _GIE -> -> 1 `i `b ]
 [; ;ver0.0_20140727.c: 98: while(1) {
 "98
 [e :U 391 ]
 {
-[; ;ver0.0_20140727.c: 134: getdata[0]= 0x51 ;
-"134
-[e = *U + &U _getdata * -> -> -> 0 `i `ui `ux -> -> # *U &U _getdata `ui `ux -> -> 81 `i `uc ]
-[; ;ver0.0_20140727.c: 135: getdata[1]= 0x8F ;
-"135
-[e = *U + &U _getdata * -> -> -> 1 `i `ui `ux -> -> # *U &U _getdata `ui `ux -> -> 143 `i `uc ]
-[; ;ver0.0_20140727.c: 136: getdata[2]= 0x3F ;
-"136
-[e = *U + &U _getdata * -> -> -> 2 `i `ui `ux -> -> # *U &U _getdata `ui `ux -> -> 63 `i `uc ]
-[; ;ver0.0_20140727.c: 137: getdata[3]= 0x8 ;
-"137
-[e = *U + &U _getdata * -> -> -> 3 `i `ui `ux -> -> # *U &U _getdata `ui `ux -> -> 8 `i `uc ]
-[; ;ver0.0_20140727.c: 138: getdata[4]= 0x40 ;
-"138
-[e = *U + &U _getdata * -> -> -> 4 `i `ui `ux -> -> # *U &U _getdata `ui `ux -> -> 64 `i `uc ]
-[; ;ver0.0_20140727.c: 139: getdata[5]= 0x0 ;
-"139
-[e = *U + &U _getdata * -> -> -> 5 `i `ui `ux -> -> # *U &U _getdata `ui `ux -> -> 0 `i `uc ]
-[; ;ver0.0_20140727.c: 140: getdata[6]= 0x0 ;
-"140
-[e = *U + &U _getdata * -> -> -> 6 `i `ui `ux -> -> # *U &U _getdata `ui `ux -> -> 0 `i `uc ]
-[; ;ver0.0_20140727.c: 141: getdata[7]= 0x18 ;
-"141
-[e = *U + &U _getdata * -> -> -> 7 `i `ui `ux -> -> # *U &U _getdata `ui `ux -> -> 24 `i `uc ]
-[; ;ver0.0_20140727.c: 142: getdata[8]= 0x48 ;
-"142
-[e = *U + &U _getdata * -> -> -> 8 `i `ui `ux -> -> # *U &U _getdata `ui `ux -> -> 72 `i `uc ]
-[; ;ver0.0_20140727.c: 143: getdata[9]= 0x0 ;
-"143
-[e = *U + &U _getdata * -> -> -> 9 `i `ui `ux -> -> # *U &U _getdata `ui `ux -> -> 0 `i `uc ]
-[; ;ver0.0_20140727.c: 144: getdata[10]= 0x0 ;
-"144
-[e = *U + &U _getdata * -> -> -> 10 `i `ui `ux -> -> # *U &U _getdata `ui `ux -> -> 0 `i `uc ]
-[; ;ver0.0_20140727.c: 145: getdata[11]= 0x8 ;
-"145
-[e = *U + &U _getdata * -> -> -> 11 `i `ui `ux -> -> # *U &U _getdata `ui `ux -> -> 8 `i `uc ]
-[; ;ver0.0_20140727.c: 146: getdata[12]= 0x40 ;
-"146
-[e = *U + &U _getdata * -> -> -> 12 `i `ui `ux -> -> # *U &U _getdata `ui `ux -> -> 64 `i `uc ]
-[; ;ver0.0_20140727.c: 147: getdata[13]= 0x0 ;
-"147
-[e = *U + &U _getdata * -> -> -> 13 `i `ui `ux -> -> # *U &U _getdata `ui `ux -> -> 0 `i `uc ]
-[; ;ver0.0_20140727.c: 148: getdata[14]= 0x0 ;
-"148
-[e = *U + &U _getdata * -> -> -> 14 `i `ui `ux -> -> # *U &U _getdata `ui `ux -> -> 0 `i `uc ]
-[; ;ver0.0_20140727.c: 149: getdata[15]= 0x28 ;
-"149
-[e = *U + &U _getdata * -> -> -> 15 `i `ui `ux -> -> # *U &U _getdata `ui `ux -> -> 40 `i `uc ]
-[; ;ver0.0_20140727.c: 150: getdata[16]= 0x44 ;
-"150
-[e = *U + &U _getdata * -> -> -> 16 `i `ui `ux -> -> # *U &U _getdata `ui `ux -> -> 68 `i `uc ]
-[; ;ver0.0_20140727.c: 151: getdata[17]= 0x0 ;
-"151
-[e = *U + &U _getdata * -> -> -> 17 `i `ui `ux -> -> # *U &U _getdata `ui `ux -> -> 0 `i `uc ]
-[; ;ver0.0_20140727.c: 152: getdata[18]= 0x0 ;
-"152
-[e = *U + &U _getdata * -> -> -> 18 `i `ui `ux -> -> # *U &U _getdata `ui `ux -> -> 0 `i `uc ]
-[; ;ver0.0_20140727.c: 153: getdata[19]= 0x8 ;
-"153
-[e = *U + &U _getdata * -> -> -> 19 `i `ui `ux -> -> # *U &U _getdata `ui `ux -> -> 8 `i `uc ]
-[; ;ver0.0_20140727.c: 154: getdata[20]= 0x40 ;
-"154
-[e = *U + &U _getdata * -> -> -> 20 `i `ui `ux -> -> # *U &U _getdata `ui `ux -> -> 64 `i `uc ]
-[; ;ver0.0_20140727.c: 155: getdata[21]= 0x0 ;
-"155
-[e = *U + &U _getdata * -> -> -> 21 `i `ui `ux -> -> # *U &U _getdata `ui `ux -> -> 0 `i `uc ]
-[; ;ver0.0_20140727.c: 156: getdata[22]= 0x0 ;
-"156
-[e = *U + &U _getdata * -> -> -> 22 `i `ui `ux -> -> # *U &U _getdata `ui `ux -> -> 0 `i `uc ]
-[; ;ver0.0_20140727.c: 157: getdata[23]= 0x48 ;
-"157
-[e = *U + &U _getdata * -> -> -> 23 `i `ui `ux -> -> # *U &U _getdata `ui `ux -> -> 72 `i `uc ]
-[; ;ver0.0_20140727.c: 158: getdata[24]= 0x42 ;
-"158
-[e = *U + &U _getdata * -> -> -> 24 `i `ui `ux -> -> # *U &U _getdata `ui `ux -> -> 66 `i `uc ]
-[; ;ver0.0_20140727.c: 159: getdata[25]= 0x0 ;
-"159
-[e = *U + &U _getdata * -> -> -> 25 `i `ui `ux -> -> # *U &U _getdata `ui `ux -> -> 0 `i `uc ]
-[; ;ver0.0_20140727.c: 160: getdata[26]= 0x0 ;
-"160
-[e = *U + &U _getdata * -> -> -> 26 `i `ui `ux -> -> # *U &U _getdata `ui `ux -> -> 0 `i `uc ]
-[; ;ver0.0_20140727.c: 161: getdata[27]= 0x8 ;
-"161
-[e = *U + &U _getdata * -> -> -> 27 `i `ui `ux -> -> # *U &U _getdata `ui `ux -> -> 8 `i `uc ]
-[; ;ver0.0_20140727.c: 162: getdata[28]= 0x7F ;
-"162
-[e = *U + &U _getdata * -> -> -> 28 `i `ui `ux -> -> # *U &U _getdata `ui `ux -> -> 127 `i `uc ]
-[; ;ver0.0_20140727.c: 163: getdata[29]= 0xFF ;
-"163
-[e = *U + &U _getdata * -> -> -> 29 `i `ui `ux -> -> # *U &U _getdata `ui `ux -> -> 255 `i `uc ]
-[; ;ver0.0_20140727.c: 164: getdata[30]= 0x3F ;
-"164
-[e = *U + &U _getdata * -> -> -> 30 `i `ui `ux -> -> # *U &U _getdata `ui `ux -> -> 63 `i `uc ]
-[; ;ver0.0_20140727.c: 165: getdata[31]= 0xFF ;
-"165
-[e = *U + &U _getdata * -> -> -> 31 `i `ui `ux -> -> # *U &U _getdata `ui `ux -> -> 255 `i `uc ]
-[; ;ver0.0_20140727.c: 166: getdata[32]= 0x7F ;
-"166
-[e = *U + &U _getdata * -> -> -> 32 `i `ui `ux -> -> # *U &U _getdata `ui `ux -> -> 127 `i `uc ]
-[; ;ver0.0_20140727.c: 167: getdata[33]= 0xFF ;
-"167
-[e = *U + &U _getdata * -> -> -> 33 `i `ui `ux -> -> # *U &U _getdata `ui `ux -> -> 255 `i `uc ]
-[; ;ver0.0_20140727.c: 168: getdata[34]= 0x3F ;
-"168
-[e = *U + &U _getdata * -> -> -> 34 `i `ui `ux -> -> # *U &U _getdata `ui `ux -> -> 63 `i `uc ]
-[; ;ver0.0_20140727.c: 169: getdata[35]= 0xFF ;
-"169
-[e = *U + &U _getdata * -> -> -> 35 `i `ui `ux -> -> # *U &U _getdata `ui `ux -> -> 255 `i `uc ]
-[; ;ver0.0_20140727.c: 170: getdata[36]= 0x40 ;
-"170
-[e = *U + &U _getdata * -> -> -> 36 `i `ui `ux -> -> # *U &U _getdata `ui `ux -> -> 64 `i `uc ]
-[; ;ver0.0_20140727.c: 171: getdata[37]= 0x0 ;
-"171
-[e = *U + &U _getdata * -> -> -> 37 `i `ui `ux -> -> # *U &U _getdata `ui `ux -> -> 0 `i `uc ]
-[; ;ver0.0_20140727.c: 172: getdata[38]= 0x0 ;
-"172
-[e = *U + &U _getdata * -> -> -> 38 `i `ui `ux -> -> # *U &U _getdata `ui `ux -> -> 0 `i `uc ]
-[; ;ver0.0_20140727.c: 173: getdata[39]= 0x8 ;
-"173
-[e = *U + &U _getdata * -> -> -> 39 `i `ui `ux -> -> # *U &U _getdata `ui `ux -> -> 8 `i `uc ]
-[; ;ver0.0_20140727.c: 174: getdata[40]= 0x40 ;
-"174
-[e = *U + &U _getdata * -> -> -> 40 `i `ui `ux -> -> # *U &U _getdata `ui `ux -> -> 64 `i `uc ]
-[; ;ver0.0_20140727.c: 175: getdata[41]= 0x0 ;
-"175
-[e = *U + &U _getdata * -> -> -> 41 `i `ui `ux -> -> # *U &U _getdata `ui `ux -> -> 0 `i `uc ]
-[; ;ver0.0_20140727.c: 176: getdata[42]= 0x0 ;
-"176
-[e = *U + &U _getdata * -> -> -> 42 `i `ui `ux -> -> # *U &U _getdata `ui `ux -> -> 0 `i `uc ]
-[; ;ver0.0_20140727.c: 177: getdata[43]= 0x8 ;
-"177
-[e = *U + &U _getdata * -> -> -> 43 `i `ui `ux -> -> # *U &U _getdata `ui `ux -> -> 8 `i `uc ]
-[; ;ver0.0_20140727.c: 178: getdata[44]= 0x40 ;
-"178
-[e = *U + &U _getdata * -> -> -> 44 `i `ui `ux -> -> # *U &U _getdata `ui `ux -> -> 64 `i `uc ]
-[; ;ver0.0_20140727.c: 179: getdata[45]= 0x0 ;
-"179
-[e = *U + &U _getdata * -> -> -> 45 `i `ui `ux -> -> # *U &U _getdata `ui `ux -> -> 0 `i `uc ]
-[; ;ver0.0_20140727.c: 180: getdata[46]= 0x0 ;
-"180
-[e = *U + &U _getdata * -> -> -> 46 `i `ui `ux -> -> # *U &U _getdata `ui `ux -> -> 0 `i `uc ]
-[; ;ver0.0_20140727.c: 181: getdata[47]= 0x8 ;
-"181
-[e = *U + &U _getdata * -> -> -> 47 `i `ui `ux -> -> # *U &U _getdata `ui `ux -> -> 8 `i `uc ]
-[; ;ver0.0_20140727.c: 182: getdata[48]= 0x40 ;
-"182
-[e = *U + &U _getdata * -> -> -> 48 `i `ui `ux -> -> # *U &U _getdata `ui `ux -> -> 64 `i `uc ]
-[; ;ver0.0_20140727.c: 183: getdata[49]= 0x0 ;
-"183
-[e = *U + &U _getdata * -> -> -> 49 `i `ui `ux -> -> # *U &U _getdata `ui `ux -> -> 0 `i `uc ]
-[; ;ver0.0_20140727.c: 184: getdata[50]= 0x0 ;
-"184
-[e = *U + &U _getdata * -> -> -> 50 `i `ui `ux -> -> # *U &U _getdata `ui `ux -> -> 0 `i `uc ]
-[; ;ver0.0_20140727.c: 185: getdata[51]= 0x8 ;
-"185
-[e = *U + &U _getdata * -> -> -> 51 `i `ui `ux -> -> # *U &U _getdata `ui `ux -> -> 8 `i `uc ]
-[; ;ver0.0_20140727.c: 186: getdata[52]= 0x40 ;
-"186
-[e = *U + &U _getdata * -> -> -> 52 `i `ui `ux -> -> # *U &U _getdata `ui `ux -> -> 64 `i `uc ]
-[; ;ver0.0_20140727.c: 187: getdata[53]= 0x0 ;
-"187
-[e = *U + &U _getdata * -> -> -> 53 `i `ui `ux -> -> # *U &U _getdata `ui `ux -> -> 0 `i `uc ]
-[; ;ver0.0_20140727.c: 188: getdata[54]= 0x0 ;
-"188
-[e = *U + &U _getdata * -> -> -> 54 `i `ui `ux -> -> # *U &U _getdata `ui `ux -> -> 0 `i `uc ]
-[; ;ver0.0_20140727.c: 189: getdata[55]= 0x8 ;
-"189
-[e = *U + &U _getdata * -> -> -> 55 `i `ui `ux -> -> # *U &U _getdata `ui `ux -> -> 8 `i `uc ]
-[; ;ver0.0_20140727.c: 190: getdata[56]= 0x40 ;
-"190
-[e = *U + &U _getdata * -> -> -> 56 `i `ui `ux -> -> # *U &U _getdata `ui `ux -> -> 64 `i `uc ]
-[; ;ver0.0_20140727.c: 191: getdata[57]= 0x0 ;
-"191
-[e = *U + &U _getdata * -> -> -> 57 `i `ui `ux -> -> # *U &U _getdata `ui `ux -> -> 0 `i `uc ]
-[; ;ver0.0_20140727.c: 192: getdata[58]= 0x0 ;
-"192
-[e = *U + &U _getdata * -> -> -> 58 `i `ui `ux -> -> # *U &U _getdata `ui `ux -> -> 0 `i `uc ]
-[; ;ver0.0_20140727.c: 193: getdata[59]= 0x8 ;
-"193
-[e = *U + &U _getdata * -> -> -> 59 `i `ui `ux -> -> # *U &U _getdata `ui `ux -> -> 8 `i `uc ]
-[; ;ver0.0_20140727.c: 194: getdata[60]= 0x41 ;
-"194
-[e = *U + &U _getdata * -> -> -> 60 `i `ui `ux -> -> # *U &U _getdata `ui `ux -> -> 65 `i `uc ]
-[; ;ver0.0_20140727.c: 195: getdata[61]= 0x8F ;
-"195
-[e = *U + &U _getdata * -> -> -> 61 `i `ui `ux -> -> # *U &U _getdata `ui `ux -> -> 143 `i `uc ]
-[; ;ver0.0_20140727.c: 196: getdata[62]= 0x3F ;
-"196
-[e = *U + &U _getdata * -> -> -> 62 `i `ui `ux -> -> # *U &U _getdata `ui `ux -> -> 63 `i `uc ]
-[; ;ver0.0_20140727.c: 197: getdata[63]= 0x8 ;
-"197
-[e = *U + &U _getdata * -> -> -> 63 `i `ui `ux -> -> # *U &U _getdata `ui `ux -> -> 8 `i `uc ]
-[; ;ver0.0_20140727.c: 200: gettingSuccess=2;
-"200
-[e = _gettingSuccess -> -> 2 `i `uc ]
-[; ;ver0.0_20140727.c: 204: if(gettingSuccess==2){
-"204
-[e $ ! == -> _gettingSuccess `i -> 2 `i 393  ]
+[; ;ver0.0_20140727.c: 100: if(getNum>69)
+"100
+[e $ ! > -> _getNum `i -> 69 `i 393  ]
+[; ;ver0.0_20140727.c: 101: getNum=0;
+"101
+[e = _getNum -> -> 0 `i `uc ]
+[e $U 394  ]
+"102
+[e :U 393 ]
+[; ;ver0.0_20140727.c: 102: else if(reservingNow){
+[e $ ! != -> _reservingNow `i -> -> -> 0 `i `uc `i 395  ]
 {
-[; ;ver0.0_20140727.c: 205: for(i=1;i<17;i++){
-"205
+[; ;ver0.0_20140727.c: 103: onetime=getch();
+"103
+[e = _onetime ( _getch ..  ]
+[; ;ver0.0_20140727.c: 104: getdata[getNum]=onetime;
+"104
+[e = *U + &U _getdata * -> _getNum `ux -> -> # *U &U _getdata `ui `ux _onetime ]
+[; ;ver0.0_20140727.c: 105: getNum++;
+"105
+[e ++ _getNum -> -> 1 `i `uc ]
+[; ;ver0.0_20140727.c: 106: reservingNow=0;
+"106
+[e = _reservingNow -> -> 0 `i `uc ]
+"107
+}
+[e :U 395 ]
+"108
+[e :U 394 ]
+[; ;ver0.0_20140727.c: 107: }
+[; ;ver0.0_20140727.c: 108: if(onetime==0x47)
+[e $ ! == -> _onetime `i -> 71 `i 396  ]
+[; ;ver0.0_20140727.c: 109: resetFlug=1;
+"109
+[e = _resetFlug -> -> 1 `i `uc ]
+[e $U 397  ]
+"110
+[e :U 396 ]
+[; ;ver0.0_20140727.c: 110: else if(resetFlug){
+[e $ ! != -> _resetFlug `i -> -> -> 0 `i `uc `i 398  ]
+{
+[; ;ver0.0_20140727.c: 111: if(resetFlug==1){
+"111
+[e $ ! == -> _resetFlug `i -> 1 `i 399  ]
+{
+[; ;ver0.0_20140727.c: 112: if(onetime==0x65)
+"112
+[e $ ! == -> _onetime `i -> 101 `i 400  ]
+[; ;ver0.0_20140727.c: 113: resetFlug==2;
+"113
+[e == -> _resetFlug `i -> 2 `i ]
+[e $U 401  ]
+"114
+[e :U 400 ]
+[; ;ver0.0_20140727.c: 114: else
+[; ;ver0.0_20140727.c: 115: resetFlug=0;
+"115
+[e = _resetFlug -> -> 0 `i `uc ]
+[e :U 401 ]
+"116
+}
+[; ;ver0.0_20140727.c: 116: }
+[e $U 402  ]
+"117
+[e :U 399 ]
+[; ;ver0.0_20140727.c: 117: else if(resetFlug==2){
+[e $ ! == -> _resetFlug `i -> 2 `i 403  ]
+{
+[; ;ver0.0_20140727.c: 118: if(onetime=0x74)
+"118
+[e $ ! != -> = _onetime -> -> 116 `i `uc `i -> -> -> 0 `i `uc `i 404  ]
+[; ;ver0.0_20140727.c: 119: getNum=0;
+"119
+[e = _getNum -> -> 0 `i `uc ]
+[e $U 405  ]
+"120
+[e :U 404 ]
+[; ;ver0.0_20140727.c: 120: else
+[; ;ver0.0_20140727.c: 121: resetFlug=0;
+"121
+[e = _resetFlug -> -> 0 `i `uc ]
+[e :U 405 ]
+"122
+}
+[e :U 403 ]
+"123
+[e :U 402 ]
+}
+[e :U 398 ]
+"124
+[e :U 397 ]
+[; ;ver0.0_20140727.c: 122: }
+[; ;ver0.0_20140727.c: 123: }
+[; ;ver0.0_20140727.c: 124: if(getNum==64){
+[e $ ! == -> _getNum `i -> 64 `i 406  ]
+{
+[; ;ver0.0_20140727.c: 125: if(onetime==0x0A)
+"125
+[e $ ! == -> _onetime `i -> 10 `i 407  ]
+[; ;ver0.0_20140727.c: 126: gettingSuccess=1;
+"126
+[e = _gettingSuccess -> -> 1 `i `uc ]
+[e :U 407 ]
+"127
+}
+[; ;ver0.0_20140727.c: 127: }
+[e $U 408  ]
+"128
+[e :U 406 ]
+[; ;ver0.0_20140727.c: 128: else if(gettingSuccess==1){
+[e $ ! == -> _gettingSuccess `i -> 1 `i 409  ]
+{
+[; ;ver0.0_20140727.c: 129: if(onetime==0x0B)
+"129
+[e $ ! == -> _onetime `i -> 11 `i 410  ]
+[; ;ver0.0_20140727.c: 130: gettingSuccess=2;
+"130
+[e = _gettingSuccess -> -> 2 `i `uc ]
+[e $U 411  ]
+"131
+[e :U 410 ]
+[; ;ver0.0_20140727.c: 131: else
+[; ;ver0.0_20140727.c: 132: gettingSuccess=0;
+"132
+[e = _gettingSuccess -> -> 0 `i `uc ]
+[e :U 411 ]
+"133
+}
+[e :U 409 ]
+"134
+[e :U 408 ]
+[; ;ver0.0_20140727.c: 133: }
+[; ;ver0.0_20140727.c: 134: if(gettingSuccess==2){
+[e $ ! == -> _gettingSuccess `i -> 2 `i 412  ]
+{
+[; ;ver0.0_20140727.c: 135: gettingSuccess=0;
+"135
+[e = _gettingSuccess -> -> 0 `i `uc ]
+[; ;ver0.0_20140727.c: 136: for(i=1;i<17;i++){
+"136
 {
 [e = _i -> -> 1 `i `uc ]
-[e $ < -> _i `i -> 17 `i 394  ]
-[e $U 395  ]
-[e :U 394 ]
+[e $ < -> _i `i -> 17 `i 413  ]
+[e $U 414  ]
+[e :U 413 ]
 {
-[; ;ver0.0_20140727.c: 206: for(j=0;j<2;j++){
-"206
+[; ;ver0.0_20140727.c: 137: for(j=0;j<2;j++){
+"137
 {
 [e = _j -> -> 0 `i `uc ]
-[e $ < -> _j `i -> 2 `i 397  ]
-[e $U 398  ]
-[e :U 397 ]
+[e $ < -> _j `i -> 2 `i 416  ]
+[e $U 417  ]
+[e :U 416 ]
 {
-[; ;ver0.0_20140727.c: 207: n=(i-1)*4+j;
-"207
+[; ;ver0.0_20140727.c: 138: n=(i-1)*4+j;
+"138
 [e = _n -> + * - -> _i `i -> 1 `i -> 4 `i -> _j `i `uc ]
-[; ;ver0.0_20140727.c: 208: getKeeping[i][j]=getdata[n];
-"208
+[; ;ver0.0_20140727.c: 139: getKeeping[i][j]=getdata[n];
+"139
 [e = *U + &U *U + &U _getKeeping * -> _i `ux -> * -> # *U &U *U &U _getKeeping `ui -> -> 2 `i `ui `ux * -> _j `ux -> -> # *U &U *U + &U _getKeeping * -> _i `ux -> * -> # *U &U *U &U _getKeeping `ui -> -> 2 `i `ui `ux `ui `ux *U + &U _getdata * -> _n `ux -> -> # *U &U _getdata `ui `ux ]
-"209
+"140
 }
-"206
+"137
 [e ++ _j -> -> 1 `i `uc ]
-[e $ < -> _j `i -> 2 `i 397  ]
-[e :U 398 ]
-"209
+[e $ < -> _j `i -> 2 `i 416  ]
+[e :U 417 ]
+"140
 }
-"210
+"141
 }
-"205
+"136
 [e ++ _i -> -> 1 `i `uc ]
-[e $ < -> _i `i -> 17 `i 394  ]
-[e :U 395 ]
-"210
+[e $ < -> _i `i -> 17 `i 413  ]
+[e :U 414 ]
+"141
 }
-[; ;ver0.0_20140727.c: 209: }
-[; ;ver0.0_20140727.c: 210: }
-[; ;ver0.0_20140727.c: 211: for(i=1;i<17;i++){
-"211
+[; ;ver0.0_20140727.c: 140: }
+[; ;ver0.0_20140727.c: 141: }
+[; ;ver0.0_20140727.c: 142: for(i=1;i<17;i++){
+"142
 {
 [e = _i -> -> 1 `i `uc ]
-[e $ < -> _i `i -> 17 `i 400  ]
-[e $U 401  ]
-[e :U 400 ]
+[e $ < -> _i `i -> 17 `i 419  ]
+[e $U 420  ]
+[e :U 419 ]
 {
-[; ;ver0.0_20140727.c: 213: putdata[i][0]=getKeeping[i][0]&0b11111110;
-"213
+[; ;ver0.0_20140727.c: 144: putdata[i][0]=getKeeping[i][0]&0b11111110;
+"144
 [e = *U + &U *U + &U _putdata * -> _i `ux -> * -> # *U &U *U &U _putdata `ui -> -> 5 `i `ui `ux * -> -> -> 0 `i `ui `ux -> -> # *U &U *U + &U _putdata * -> _i `ux -> * -> # *U &U *U &U _putdata `ui -> -> 5 `i `ui `ux `ui `ux -> & -> *U + &U *U + &U _getKeeping * -> _i `ux -> * -> # *U &U *U &U _getKeeping `ui -> -> 2 `i `ui `ux * -> -> -> 0 `i `ui `ux -> -> # *U &U *U + &U _getKeeping * -> _i `ux -> * -> # *U &U *U &U _getKeeping `ui -> -> 2 `i `ui `ux `ui `ux `i -> 254 `i `uc ]
-[; ;ver0.0_20140727.c: 215: putdata[i][2]=getKeeping[i][1]&0b00001111;
-"215
+[; ;ver0.0_20140727.c: 146: putdata[i][2]=getKeeping[i][1]&0b00001111;
+"146
 [e = *U + &U *U + &U _putdata * -> _i `ux -> * -> # *U &U *U &U _putdata `ui -> -> 5 `i `ui `ux * -> -> -> 2 `i `ui `ux -> -> # *U &U *U + &U _putdata * -> _i `ux -> * -> # *U &U *U &U _putdata `ui -> -> 5 `i `ui `ux `ui `ux -> & -> *U + &U *U + &U _getKeeping * -> _i `ux -> * -> # *U &U *U &U _getKeeping `ui -> -> 2 `i `ui `ux * -> -> -> 1 `i `ui `ux -> -> # *U &U *U + &U _getKeeping * -> _i `ux -> * -> # *U &U *U &U _getKeeping `ui -> -> 2 `i `ui `ux `ui `ux `i -> 15 `i `uc ]
-[; ;ver0.0_20140727.c: 217: putdata[i][3]=(getKeeping[i][0]&0b00000001)|((getKeeping[i][1]&0b10000000)>>6);
-"217
+[; ;ver0.0_20140727.c: 148: putdata[i][3]=(getKeeping[i][0]&0b00000001)|((getKeeping[i][1]&0b10000000)>>6);
+"148
 [e = *U + &U *U + &U _putdata * -> _i `ux -> * -> # *U &U *U &U _putdata `ui -> -> 5 `i `ui `ux * -> -> -> 3 `i `ui `ux -> -> # *U &U *U + &U _putdata * -> _i `ux -> * -> # *U &U *U &U _putdata `ui -> -> 5 `i `ui `ux `ui `ux -> | & -> *U + &U *U + &U _getKeeping * -> _i `ux -> * -> # *U &U *U &U _getKeeping `ui -> -> 2 `i `ui `ux * -> -> -> 0 `i `ui `ux -> -> # *U &U *U + &U _getKeeping * -> _i `ux -> * -> # *U &U *U &U _getKeeping `ui -> -> 2 `i `ui `ux `ui `ux `i -> 1 `i >> & -> *U + &U *U + &U _getKeeping * -> _i `ux -> * -> # *U &U *U &U _getKeeping `ui -> -> 2 `i `ui `ux * -> -> -> 1 `i `ui `ux -> -> # *U &U *U + &U _getKeeping * -> _i `ux -> * -> # *U &U *U &U _getKeeping `ui -> -> 2 `i `ui `ux `ui `ux `i -> 128 `i -> 6 `i `uc ]
-[; ;ver0.0_20140727.c: 218: if(i==16)
-"218
-[e $ ! == -> _i `i -> 16 `i 403  ]
-[; ;ver0.0_20140727.c: 219: putdata[i][3]=putdata[i][3]|0b10110000;
-"219
+[; ;ver0.0_20140727.c: 149: if(i==16)
+"149
+[e $ ! == -> _i `i -> 16 `i 422  ]
+[; ;ver0.0_20140727.c: 150: putdata[i][3]=putdata[i][3]|0b10110000;
+"150
 [e = *U + &U *U + &U _putdata * -> _i `ux -> * -> # *U &U *U &U _putdata `ui -> -> 5 `i `ui `ux * -> -> -> 3 `i `ui `ux -> -> # *U &U *U + &U _putdata * -> _i `ux -> * -> # *U &U *U &U _putdata `ui -> -> 5 `i `ui `ux `ui `ux -> | -> *U + &U *U + &U _putdata * -> _i `ux -> * -> # *U &U *U &U _putdata `ui -> -> 5 `i `ui `ux * -> -> -> 3 `i `ui `ux -> -> # *U &U *U + &U _putdata * -> _i `ux -> * -> # *U &U *U &U _putdata `ui -> -> 5 `i `ui `ux `ui `ux `i -> 176 `i `uc ]
-[e $U 404  ]
-"220
-[e :U 403 ]
-[; ;ver0.0_20140727.c: 220: else if(i%2==0)
-[e $ ! == % -> _i `i -> 2 `i -> 0 `i 405  ]
-[; ;ver0.0_20140727.c: 221: putdata[i][3]=putdata[i][3]|0b10010000;
-"221
+[e $U 423  ]
+"151
+[e :U 422 ]
+[; ;ver0.0_20140727.c: 151: else if(i%2==0)
+[e $ ! == % -> _i `i -> 2 `i -> 0 `i 424  ]
+[; ;ver0.0_20140727.c: 152: putdata[i][3]=putdata[i][3]|0b10010000;
+"152
 [e = *U + &U *U + &U _putdata * -> _i `ux -> * -> # *U &U *U &U _putdata `ui -> -> 5 `i `ui `ux * -> -> -> 3 `i `ui `ux -> -> # *U &U *U + &U _putdata * -> _i `ux -> * -> # *U &U *U &U _putdata `ui -> -> 5 `i `ui `ux `ui `ux -> | -> *U + &U *U + &U _putdata * -> _i `ux -> * -> # *U &U *U &U _putdata `ui -> -> 5 `i `ui `ux * -> -> -> 3 `i `ui `ux -> -> # *U &U *U + &U _putdata * -> _i `ux -> * -> # *U &U *U &U _putdata `ui -> -> 5 `i `ui `ux `ui `ux `i -> 144 `i `uc ]
-[e :U 405 ]
-"223
-[e :U 404 ]
-[; ;ver0.0_20140727.c: 223: putdata[i][4]=(getKeeping[i][1]&0b01110000)>>4;
+[e :U 424 ]
+"154
+[e :U 423 ]
+[; ;ver0.0_20140727.c: 154: putdata[i][4]=(getKeeping[i][1]&0b01110000)>>4;
 [e = *U + &U *U + &U _putdata * -> _i `ux -> * -> # *U &U *U &U _putdata `ui -> -> 5 `i `ui `ux * -> -> -> 4 `i `ui `ux -> -> # *U &U *U + &U _putdata * -> _i `ux -> * -> # *U &U *U &U _putdata `ui -> -> 5 `i `ui `ux `ui `ux -> >> & -> *U + &U *U + &U _getKeeping * -> _i `ux -> * -> # *U &U *U &U _getKeeping `ui -> -> 2 `i `ui `ux * -> -> -> 1 `i `ui `ux -> -> # *U &U *U + &U _getKeeping * -> _i `ux -> * -> # *U &U *U &U _getKeeping `ui -> -> 2 `i `ui `ux `ui `ux `i -> 112 `i -> 4 `i `uc ]
-"224
+"155
 }
-"211
+"142
 [e ++ _i -> -> 1 `i `uc ]
-[e $ < -> _i `i -> 17 `i 400  ]
-[e :U 401 ]
-"224
+[e $ < -> _i `i -> 17 `i 419  ]
+[e :U 420 ]
+"155
 }
-"225
+"156
 }
-[e :U 393 ]
-[; ;ver0.0_20140727.c: 224: }
-[; ;ver0.0_20140727.c: 225: }
-[; ;ver0.0_20140727.c: 226: GIE=1;
-"226
-[e = _GIE -> -> 1 `i `b ]
-[; ;ver0.0_20140727.c: 227: while(1);
-"227
-[e :U 407 ]
-[e :U 406 ]
-[e $U 407  ]
-[e :U 408 ]
-"228
+[e :U 412 ]
+"157
 }
 [e :U 390 ]
 "98
 [e $U 391  ]
 [e :U 392 ]
-[; ;ver0.0_20140727.c: 228: }
-[; ;ver0.0_20140727.c: 229: }
-"229
+[; ;ver0.0_20140727.c: 155: }
+[; ;ver0.0_20140727.c: 156: }
+[; ;ver0.0_20140727.c: 157: }
+[; ;ver0.0_20140727.c: 158: }
+"158
 [e :UE 386 ]
 }

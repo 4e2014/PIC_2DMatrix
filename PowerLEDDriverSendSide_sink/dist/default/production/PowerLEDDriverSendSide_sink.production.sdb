@@ -256,19 +256,19 @@
 [v main@getKeeping getKeeping `[16][2]uc  1 a 32 30 ]
 "83
 [v main@i i `uc  1 a 1 69 ]
-[v main@j j `uc  1 a 1 68 ]
 "84
-[v main@gettingSuccess gettingSuccess `uc  1 a 1 67 ]
+[v main@onetime onetime `uc  1 a 1 68 ]
 "83
-[v main@n n `uc  1 a 1 66 ]
-[v main@individual individual `uc  1 a 1 65 ]
+[v main@j j `uc  1 a 1 67 ]
 "84
-[v main@resetFlug resetFlug `uc  1 a 1 64 ]
-[v main@onetime onetime `uc  1 a 1 63 ]
-[v main@getNum getNum `uc  1 a 1 62 ]
+[v main@resetFlug resetFlug `uc  1 a 1 66 ]
+[v main@getNum getNum `uc  1 a 1 65 ]
+[v main@gettingSuccess gettingSuccess `uc  1 a 1 64 ]
 "83
+[v main@n n `uc  1 a 1 63 ]
+[v main@individual individual `uc  1 a 1 62 ]
 [v main@F3525 F3525 `[70]uc  1 s 70 F3525 ]
-"229
+"158
 } 0
 "60
 [v _x2 x2 `(uc  1 e 1 0 ]
@@ -299,6 +299,11 @@
 [v _setpin setpin `(v  1 e 0 0 ]
 {
 "81
+} 0
+"9 /Users/akihiro/OneDrive/MacSyncFiles/Git/2DmatrixPIC/PowerLEDDriverSendSide_sink/uart.c
+[v _getch getch `(uc  1 e 1 0 ]
+{
+"13
 } 0
 "15 /Applications/microchip/xc8/v1.32/sources/common/Umul16.c
 [v ___wmul __wmul `(ui  1 e 2 0 ]
