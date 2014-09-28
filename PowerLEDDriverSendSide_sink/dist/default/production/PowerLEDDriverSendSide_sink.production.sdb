@@ -220,6 +220,8 @@
 [v _RCIF RCIF `VEb  1 e 0 @141 ]
 "8400
 [v _RD RD `VEb  1 e 0 @3240 ]
+"8414
+[v _RD6 RD6 `VEb  1 e 0 @126 ]
 "8866
 [v _TMR0IE TMR0IE `VEb  1 e 0 @93 ]
 "8868
@@ -268,7 +270,7 @@
 [v main@n n `uc  1 a 1 63 ]
 [v main@individual individual `uc  1 a 1 62 ]
 [v main@F3525 F3525 `[70]uc  1 s 70 F3525 ]
-"158
+"168
 } 0
 "60
 [v _x2 x2 `(uc  1 e 1 0 ]

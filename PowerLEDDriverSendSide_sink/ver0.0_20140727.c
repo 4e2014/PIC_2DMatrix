@@ -83,6 +83,12 @@ void main()
      char i,j,n,test[8][4],individual=255;
      char getdata[70]={0},getKeeping[16][2],getNum=0,onetime=0,resetFlug=0,gettingSuccess=0;
      setpin();
+     while(1){
+         RD6=1;
+         getch();
+         RD6=0;
+         __delay_ms(100);
+     }
      init_comms();
      individual=E2promRead(0x00);
      for(i=0;i<16;i++)
@@ -94,6 +100,10 @@ void main()
      TMR0IE = 1 ;              // ????0???(T0IE)?????
      WPUB = 0xC0;
      nWPUEN = 0;
+     
+     
+     
+     
      GIE    = 1 ;
      while(1) {
          // 0x 47 65 74 ="Get"
